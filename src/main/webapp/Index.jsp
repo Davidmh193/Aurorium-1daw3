@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Links CSS-->
-    <link rel="stylesheet" href="css/Indext.css"/>
-     <link rel="stylesheet" href="css/FoterOficial.css">
+    <link rel="stylesheet" href="css/Index.css"/>
+     <link rel="stylesheet" href="css/Foter.css">
 
     <!--Links letras-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -167,6 +167,6 @@
       	</div>
     	</div>
     </footer>
-    <script src="js/main.js"></script>
+    <script src="js/js.js"></script>
   </body>
 </html>
