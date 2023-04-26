@@ -1,1 +1,382 @@
 @charset "ISO-8859-1";
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 30px 0;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logotipo {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--rojo);
+	font-size: 40px;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+
+/* ---- ----- ----- Pelicula Principal ----- ----- ----- */
+.pelicula-principal {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/fotoReservas.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.pelicula-principal .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principal .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principal .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pelicula-principal {
+		font-size: 14px;
+	}
+
+	.pelicula-principal .descripcion {
+		max-width: 100%;
+	}
+}
+.CuadroBlanco1{
+    background-color: #fff;
+    margin-bottom: 60px;
+}
+
+/* Estilos para el selector de fecha */
+input[type="date"] {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 16px;
+    height: 40px;
+    padding: 8px;
+    width: 200px;
+  }
+  
+  /* Estilos para el texto dentro del selector de fecha */
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1) opacity(0.7);
+  }
+  
+  /* Estilos para el texto dentro del selector de fecha en Firefox */
+  input[type="date"]::-moz-calendar-picker-indicator {
+    filter: invert(1) opacity(0.7);
+  }
+  
+  /* Estilos para el texto dentro del selector de fecha en Edge e IE */
+  input[type="date"]::-ms-clear {
+    display: none;
+  }
+  
+  /* Estilos para el texto dentro del selector de fecha en Safari */
+  input[type="date"]::-webkit-clear-button {
+    display: none;
+  }
+  
+/*Botones*/
+/* Estilos para el botón */
+button.my-date-picker {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 16px;
+    height: 40px;
+    padding: 8px;
+    width: 200px;
+    cursor: pointer;
+}
+
+/* Cambiar el cursor al pasar el ratón por encima del botón */
+button.my-date-picker:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Cambiar el color del botón al pulsarlo */
+button.my-date-picker:active {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+/* Estilos para el campo de texto */
+input[type="text"] {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 16px;
+    height: 40px;
+    padding: 8px;
+    width: 200px;
+  }
+  
+  /* Estilos para el placeholder */
+  input[type="text"]::placeholder {
+    color: #fff;
+    opacity: 0.5;
+  }
+  
+  /* Estilos para el texto dentro del campo de texto */
+  input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #fff;
+  }
+  .botoncitos{
+    display: inline-block;
+  }
+  /* Estilos para el menú desplegable */
+.dropdown select {
+    appearance: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 16px;
+    height: 40px;
+    padding: 8px;
+    width: 200px;
+  }
+  
+  /* Estilos para la flecha del menú desplegable */
+  .dropdown select::-ms-expand {
+    display: none;
+  }
+  
+  .dropdown select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+  
+  /* Estilos para las opciones del menú desplegable */
+  .dropdown select option {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+  }
+  
+  /* Estilos para el menú desplegable en estado hover */
+  .dropdown select:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .CuadroBlanco1{
+    display: flex;
+    justify-content: center; 
+    text-align: center;   
+    width: 50%;
+    vertical-align: middle;
+    left: 0;
+    margin-left: 26%;
+	font-family: 'Open Sans', sans-serif;
+
+}
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+   }
+   
+   button.botonesReservas1 {
+    width: 12rem;
+    height: auto;
+    margin-bottom: 5%;
+   }
+   
+   button.botonesReservas1 .circle1 {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+  
+   }
+   
+   button.botonesReservas1 .circle1 .icon1 {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.botonesReservas1 .circle1 .icon1.arrow1 {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.botonesReservas1 .circle1 .icon1.arrow1::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.botonesReservas1 .button-text1 {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   button:hover .circle1 {
+    width: 100%;
+   }
+   
+   button:hover .circle1 .icon1.arrow1 {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text1 {
+    color: #fff;
+   }
+   .dash{
+    border: 1pt solid black;
+    width: 60%;
+    height: 0px;
+    margin-left: 20%;
+    margin-top: 2.5%;
+    margin-bottom: 5%;
+
+}
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+  }
+  
+  #form p {
+    text-align: center;
+  }
+  
+  #form label {
+    font-size: 20px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: grey;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+  .DesignedBy{
+  display:flex;
+  justify-content:center;
+  }
+
+
+
+
+  
