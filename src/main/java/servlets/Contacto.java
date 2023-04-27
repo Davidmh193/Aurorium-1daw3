@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import ModeloDTA.ContactoBBDD;
+
 /**
  * Servlet implementation class Contacto
  */
@@ -26,16 +28,31 @@ public class Contacto extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		String Dni= request.getParameter("Dni");
+		String nombreapellido=request.getParameter("Nombreapellido");
+		String email =request.getParameter("Email");
+		String telfono = request.getParameter("Telefono");
+		String mensaje= request.getParameter("mensaje");
+		
+		ContactoBBDD contacto = new ContactoBBDD();
+		
+		
+		  try {
+			  contacto.ReservasUsuarios(Dni, nombreapellido, email,telfono,mensaje);
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		
+		
+		request.getRequestDispatcher("Contacto.jsp").forward(request,response);
 	}
 
 }

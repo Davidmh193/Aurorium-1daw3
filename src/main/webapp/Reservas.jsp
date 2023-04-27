@@ -30,7 +30,7 @@
           <div class="links" id="links">
             <div class="wrapper-links">
               <a href="Index.jsp" class="link"><i class="fa fa-home"></i></q> Home</a>
-              <a href="Activides.html" class="link "><i class="fa fa-globe"></i></q>Actividades</a>
+              <a href="Activides.html" class="link "><i class="fa fa-globe"></i></q> Actividades</a>
               <a href="#" class="link"><i class="fa fa-bed"></i></q> Habitaciones</a>
               <a href="Reservas.jsp" class="link active"><i class="fa fa-book"></i></q> Reservar</a>
               <a href="Contacto.jsp" class="link"><i class="fa fa-phone"></i></q> Contacto</a>

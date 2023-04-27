@@ -82,22 +82,22 @@
           </div>
   
           <div class = "contact-form">
-            <form>
+            <form method="post" action="Contacto">
               <div>
-                <input type = "text" class = "form-control" placeholder="Dni">
-                <input type = "text" class = "form-control" placeholder="Nombre-apellido">
+                <input type = "text" class = "form-control" placeholder="Dni" name="Dni">
+                <input type = "text" class = "form-control" placeholder="Nombre-apellido" name="Nombreapellido">
               </div>
               <div>
-                <input type = "email" class = "form-control" placeholder="E-mail">
-                <input type = "text" class = "form-control" placeholder="Telefono">
+                <input type = "email" class = "form-control" placeholder="E-mail" name="Email">
+                <input type = "text" class = "form-control" placeholder="Telefono" name="Telefono">
               </div>
-              <textarea rows = "5" placeholder="Mensaje" class = "form-control"></textarea>
+              <textarea rows = "5" placeholder="Mensaje" class = "form-control" name ="mensaje"></textarea>
               <!--Botn de enviar-->
               <button class="learn-more">
                 <span class="circle" aria-hidden="true">
                 <span class="icon arrow"></span>
                 </span>
-                <span class="button-text">Enviar</span>
+                <span type="submit" class="button-text">Enviar</span>
               </button>
             </form>
   
