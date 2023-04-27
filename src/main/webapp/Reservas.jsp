@@ -47,26 +47,25 @@
 
     <main>
 		<div class="pelicula-principal">
-			<div class="contenedor">
+			<div class="contenedor" style="margin-left:2%;">
 				<h3 class="titulo">Reservas</h3>
 				<p class="descripcion">Descubre nustras suites increibles y comodas para un grandescanso durante tus vacaciones.
 				</p>
                 <div class="botoncitos"></div>
-                <input type="date" class="my-date-picker" style="margin-bottom: 2%;">
-                <input type="date" class="my-date-picker" style="margin-bottom: 2%;">
-                <input type="text" class="my-text-input" placeholder="DNI" style="margin-bottom: 2%;">
+                <form method="post" action="Reservas">
+                <input type="date" class="my-date-picker" style="margin-bottom: 2%;" name="FechaEntrada">
+                <input type="date" class="my-date-picker" style="margin-bottom: 2%;" name="FechaSalida">
+                <input type="text" class="my-text-input" placeholder="DNI"  name="Dni" style="margin-bottom: 2%;">
                 <div class="dropdown" style="display:inline-block; margin-bottom: 2%;">
-                    <select>
-                      <option value="option1">Deluxe Room</option>
-                      <option value="option2">Suite Royale</option>
-                      <option value="option3">Dual Lovers</option>
-                      <option value="option4">Suite Premium</option>
+                    <select name="Desplegable">
+                      <option value="Deluxe Room">Deluxe Room</option>
+                      <option value="Suite Royale">Suite Royale</option>
+                      <option value="Dual Lovers">Dual Lovers</option>
+                      <option value="Suite Premium">Suite Premium</option>
                     </select>
                   </div>
-                  
-                <button class="my-date-picker"style="margin-bottom: 0.3%;">RESERVAR</button>
-
-
+                <button class="my-date-picker" type="submit" style="margin-bottom: 0.3%;">RESERVAR</button>
+  			 </form>
 			</div>
 		</div>
         

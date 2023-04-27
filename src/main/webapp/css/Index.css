@@ -209,17 +209,11 @@
     transform: translateY(0%);
   }
   .video {  
-    /*min-width: 100%;
-    min-height: 100%;*/
     width: auto;
-    height: 100vh;
-    /*position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);  */
+    height: 100vh; 
     position: relative;
     z-index: -10;
-    /*background-size: 1000px;*/
+  
   }
   .CuadradoBlanco{
     background-color: rgba(255, 255, 255, 0.541);
@@ -471,6 +465,7 @@ button {
      background-size: 70%;
 
   }
+  
   video{
     width: 100%;
   }
