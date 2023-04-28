@@ -49,7 +49,7 @@
 		<div class="pelicula-principal">
 			<div class="contenedor" style="margin-left:2%;">
 				<h3 class="titulo">Reservas</h3>
-				<p class="descripcion">Descubre nustras suites increibles y comodas para un grandescanso durante tus vacaciones.
+				<p class="descripcion">Descubre nuestras suites increibles y comodas para un gran descanso durante tus vacaciones.
 				</p>
                 <div class="botoncitos"></div>
                 <form method="post" action="Reservas">
