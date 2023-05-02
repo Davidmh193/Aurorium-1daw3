@@ -42,9 +42,9 @@ try {
 	pSt.setString(2, Password);
 	pSt.execute();
 
-ResultSet r = null;
-r.next();
+	ResultSet r = pSt.executeQuery();
 
+	r.next();
 empleado.setDni(r.getString(1));
 
 empleado.setPassword(r.getString(2));

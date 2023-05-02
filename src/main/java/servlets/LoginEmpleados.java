@@ -32,17 +32,23 @@ public class LoginEmpleados extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
+		LoginEmpleadosContraseña Login = new LoginEmpleadosContraseña();
 		Empleados empleado = new Empleados();
-		/*LoginEmpleadosContraseña.class(request.getParameter("username"), request.getParameter("password"));*/
-
+		
+		try {
+			empleado = Login.LoginEmpleados(request.getParameter("Dni"), request.getParameter("Password"));
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		if (empleado!=null) {
 
 		HttpSession session = request.getSession();
@@ -50,11 +56,11 @@ public class LoginEmpleados extends HttpServlet {
 		session.setAttribute("usuario", empleado);
 
 		///insertar html de Administracion 
-		response.sendRedirect(request.getContextPath()+"//");
+		response.sendRedirect(request.getContextPath()+"/Administracion");
 
 		}else {
 		//Lleva a un usuario al menu
-		response.sendRedirect(request.getContextPath()+"/Indext");
+		response.sendRedirect(request.getContextPath()+"/Login");
 
 		}
 	

@@ -1,7 +1,11 @@
 package ModeloDTA;
 
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+
+import ModeloDTO.Clientes;
 
 public class AdministradorClientesBBDD {
 
@@ -62,6 +66,30 @@ public class AdministradorClientesBBDD {
 
 			e.printStackTrace();
 		}
+
+	}
+	
+	public ArrayList<Clientes> getClientes() throws SQLException {
+		ArrayList<Clientes> clientes = new ArrayList<>();
+		Conector conector = new Conector();
+		conector.conectar();
+
+		PreparedStatement pSt = conector.getCon().prepareStatement("SELECT Dni, Nombre, Apellido,Telefono, Direccion,Localidad FROM clientes");
+		ResultSet resultado = pSt.executeQuery();
+		while (resultado.next()) {
+			Clientes usuario = new Clientes();
+			
+			usuario.setDni(resultado.getString("Dni"));
+			usuario.setNombre(resultado.getString("Nombre"));
+			usuario.setApellido(resultado.getString("Apellido"));
+			usuario.setApellido(resultado.getString("Telefono"));
+			usuario.setApellido(resultado.getString("Direccion"));
+			usuario.setApellido(resultado.getString("Localidad"));
+			clientes.add(usuario);
+		}
+		pSt.close();
+		conector.cerrar();
+		return clientes;
 
 	}
 	
