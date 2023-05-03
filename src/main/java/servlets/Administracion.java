@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import ModeloDTA.AdministradorClientesBBDD;
 import ModeloDTO.Clientes;
 
 /**
@@ -32,20 +33,21 @@ public class Administracion extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		Clientes cliente = new Clientes();
+		
+		AdministradorClientesBBDD basedatos = new AdministradorClientesBBDD();
 		
 		
 		ArrayList<Clientes> clientes = new ArrayList<Clientes>();
-		/*
+		
 		try {
-			clientes= cliente();
+			clientes= basedatos.getClientes();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
-		request.setAttribute("usuarios", clientes);
-		request.getRequestDispatcher("MainMenu.jsp").forward(request,response);*/
+		request.setAttribute("clientes", clientes);
+		request.getRequestDispatcher("Administracion.jsp").forward(request,response);
 
 		
 		

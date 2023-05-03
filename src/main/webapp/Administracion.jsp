@@ -1,8 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+    
 <!DOCTYPE html>
 <html lang="en">
     <head>
+    
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -131,35 +134,35 @@
         
         <tbody>
         
-        <c:forEach items="${Clientes}" var="clientes">
+        <c:forEach items="${clientes}" var="cliente">
         
         <tr>
         
-        <td>${Clientes.Dni}</td>
+        <td>${cliente.dni}</td>
         
-        <td>${Clientes.Nombre}</td>
+        <td>${cliente.nombre}</td>
         
-        <td>${Clientes.apellido}</td>
+        <td>${cliente.apellidos}</td>
         
-        <td>${Clientes.telefono}</td>
+        <td>${cliente.telefono}</td>
 
-        <td>${Clientes.Direccion}</td>
+        <td>${cliente.direccion}</td>
         
-        <td>${Clientes.Localidad}</td>
+        <td>${cliente.localidad}</td>
 
 
         <!-- actualizar y eliminar -->
         
-        <td><a href="/MiaKhademia/Modificar?q=profesor&dni=${profesor.dni}"><i
+        <td><a href="/Aurorium/Modificar?q=Cliente&dni=${cliente.dni}"><i
         
         class="fa-regular fa-pen-to-square fa-lg"></i></a></td>
         
-        <td><a href="/MiaKhademia/Eliminar?q=profesor&id=${profesor.dni}"><i
+        <td><a href="/Aurorium/Eliminar?q=Cliente&Dni=${cliente.dni}"><i
         
         class="fa-solid fa-trash-can fa-lg"></i></a></td>
 
 
-        <td><a href="/MiaKhademia/Eliminar?q=profesor&id=${profesor.dni}"><i
+        <td><a href="InsertarClientes${cliente.dni}"><i
         
           class="fa fa-user-plus"></i></a></td>
         

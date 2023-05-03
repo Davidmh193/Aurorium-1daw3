@@ -40,7 +40,7 @@
                         </div> 
                        </form>
                            <div class="signin">
-                            <span>Te has equivocado?   <a href="#">Salir</a></span>
+                            <span>Te has equivocado? <a href="Index.jsp">Salir</a></span>
                      </div>
                 </div>
             </div>

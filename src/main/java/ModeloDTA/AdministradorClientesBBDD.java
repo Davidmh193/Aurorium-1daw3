@@ -74,17 +74,17 @@ public class AdministradorClientesBBDD {
 		Conector conector = new Conector();
 		conector.conectar();
 
-		PreparedStatement pSt = conector.getCon().prepareStatement("SELECT Dni, Nombre, Apellido,Telefono, Direccion,Localidad FROM clientes");
+		PreparedStatement pSt = conector.getCon().prepareStatement("SELECT * FROM clientes");
 		ResultSet resultado = pSt.executeQuery();
 		while (resultado.next()) {
 			Clientes usuario = new Clientes();
 			
 			usuario.setDni(resultado.getString("Dni"));
 			usuario.setNombre(resultado.getString("Nombre"));
-			usuario.setApellido(resultado.getString("Apellido"));
-			usuario.setApellido(resultado.getString("Telefono"));
-			usuario.setApellido(resultado.getString("Direccion"));
-			usuario.setApellido(resultado.getString("Localidad"));
+			usuario.setApellidos(resultado.getString("Apellidos"));
+			usuario.setTelefono(resultado.getString("Telefono"));
+			usuario.setDireccion(resultado.getString("Direccion"));
+			usuario.setLocalidad(resultado.getString("Localidad"));
 			clientes.add(usuario);
 		}
 		pSt.close();

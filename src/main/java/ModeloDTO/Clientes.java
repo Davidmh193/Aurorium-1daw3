@@ -3,8 +3,8 @@ package ModeloDTO;
 public class Clientes {
 	private String Dni;
 	private String Nombre;
-	private String apellido;
-	private String telefono;
+	private String Apellidos;
+	private String Telefono;
 	private String Direccion;
 	private String Localidad;
 	
@@ -20,17 +20,19 @@ public class Clientes {
 	public void setNombre(String nombre) {
 		Nombre = nombre;
 	}
-	public String getApellido() {
-		return apellido;
+
+
+	public String getApellidos() {
+		return Apellidos;
 	}
-	public void setApellido(String apellido) {
-		this.apellido = apellido;
+	public void setApellidos(String apellidos) {
+		Apellidos = apellidos;
 	}
 	public String getTelefono() {
-		return telefono;
+		return Telefono;
 	}
 	public void setTelefono(String telefono) {
-		this.telefono = telefono;
+		Telefono = telefono;
 	}
 	public String getDireccion() {
 		return Direccion;
