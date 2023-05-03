@@ -43,7 +43,7 @@
              <div class="imagenlogo"><img src="img/LogoAurorium1-removebg-preview.png" alt=""></div>
               <div class="links" id="links">
                 <div class="wrapper-links">
-                  <a href="Index.html" class="link active"><i class="fa fa-archive"></i></q> Administracion</a>
+                  <a href="Administracion" class="link active"><i class="fa fa-archive"></i></q> Administracion</a>
                   <a href="Contacto.html" class="link"><i class="fa fa-user-circle"></i></q> Log-out</a>
                 </div>
               </div>
