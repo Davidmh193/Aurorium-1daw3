@@ -3,7 +3,7 @@ package ModeloDTA;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-import ModeloDTO.Empleados;
+import ModeloDTO.Empleado;
 
 public class LoginEmpleadosContraseña {
 
@@ -22,9 +22,9 @@ public class LoginEmpleadosContraseña {
 	 * e.printStackTrace(); } return encontrado; } }
 	 */
 
-	public Empleados LoginEmpleados(String Dni, String Password) throws ClassNotFoundException {
+	public Empleado LoginEmpleados(String Dni, String Password) throws ClassNotFoundException {
 
-		Empleados empleado = new Empleados();
+		Empleado empleado = new Empleado();
 
 		try {
 

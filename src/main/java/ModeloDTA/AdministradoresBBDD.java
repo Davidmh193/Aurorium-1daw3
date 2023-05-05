@@ -1,7 +1,12 @@
 package ModeloDTA;
 
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+
+
+import ModeloDTO.Empleado;
 
 public class AdministradoresBBDD {
 	
@@ -68,6 +73,35 @@ public class AdministradoresBBDD {
 		}
 
 	}
+	
+	
+	public ArrayList<Empleado> getEmpleados() throws SQLException {
+		ArrayList<Empleado> empleados = new ArrayList<>();
+		Conector conector = new Conector();
+		conector.conectar();
+
+		PreparedStatement pSt = conector.getCon().prepareStatement("SELECT * FROM empleados");
+		ResultSet resultado = pSt.executeQuery();
+		while (resultado.next()) {
+			Empleado usuario = new Empleado();
+			
+			usuario.setDni(resultado.getString("Dni"));
+			usuario.setNombre(resultado.getString("Nombre"));
+			usuario.setApellido(resultado.getString("Apellidos"));
+			usuario.setTelfeono(resultado.getString("Telefono"));
+			usuario.setDireccion(resultado.getString("Direccion"));
+			usuario.setLocalidad(resultado.getString("Localidad"));
+			usuario.setRol(resultado.getString("Rol"));
+			usuario.setPassword(resultado.getString("Password"));
+			empleados.add(usuario);
+		}
+		pSt.close();
+		conector.cerrar();
+		return empleados;
+
+	}
+	
+	
 	
 	
 	

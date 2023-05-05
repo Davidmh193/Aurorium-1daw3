@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import ModeloDTA.LoginEmpleadosContraseña;
-import ModeloDTO.Empleados;
+import ModeloDTO.Empleado;
 
 /**
  * Servlet implementation class LoginEmpleados
@@ -40,7 +40,7 @@ public class LoginEmpleados extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		LoginEmpleadosContraseña Login = new LoginEmpleadosContraseña();
-		Empleados empleado = new Empleados();
+		Empleado empleado = new Empleado();
 		
 		try {
 			empleado = Login.LoginEmpleados(request.getParameter("Dni"), request.getParameter("Password"));

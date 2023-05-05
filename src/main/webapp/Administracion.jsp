@@ -43,8 +43,10 @@
              <div class="imagenlogo"><img src="img/LogoAurorium1-removebg-preview.png" alt=""></div>
               <div class="links" id="links">
                 <div class="wrapper-links">
+                
                   <a href="Administracion" class="link active"><i class="fa fa-archive"></i></q> Administracion</a>
-                  <a href="Contacto.html" class="link"><i class="fa fa-user-circle"></i></q> Log-out</a>
+                   <a href="Empleados" class="link"><i class="fa fa-archive"></i></q> Empleados</a>
+                  <a href="" class="link"><i class="fa fa-user-circle"></i></q> Log-out</a>
                 </div>
               </div>
               <div class="icon-links" id="button-menu">
@@ -172,7 +174,7 @@
         
         <tr>
         
-        <td colspan="9" class="text-center"><a
+        <td colspan="10" class="text-center"><a
         
         href="/MiaKhademia/Insertar?q=profesor"><i
         

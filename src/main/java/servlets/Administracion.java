@@ -46,6 +46,9 @@ public class Administracion extends HttpServlet {
 			e.printStackTrace();
 		}
 		
+		
+		
+		
 		request.setAttribute("clientes", clientes);
 		request.getRequestDispatcher("Administracion.jsp").forward(request,response);
 

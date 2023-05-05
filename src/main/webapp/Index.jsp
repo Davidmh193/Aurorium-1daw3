@@ -162,7 +162,7 @@
   			<li><a href="#">Nuestras habitaciones</a></li>
  		 	<li><a href="#">Politicas de privacidad</a></li>
   			<li><a href="#">Contacto</a></li>
- 			<li><a href="#"><i class="fa fa-user-o"> </i>Login-empleados</a></li>
+ 			<li><a href="Login.jsp"><i class="fa fa-user-o"> </i>Login-empleados</a></li>
         </ul>
       </div>
       
