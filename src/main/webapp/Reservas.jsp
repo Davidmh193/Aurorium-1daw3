@@ -2,26 +2,28 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="ISO-8859-1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/Index.css" />
-     <link rel="stylesheet" href="css/Foter.css">
-     <link rel="stylesheet" href="css/Reservas.css">
-     <link rel="stylesheet" href="css/Contacto.css">
+	<head>
+	    <meta charset="ISO-8859-1">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    
+	    <!-- Links css -->
+	    <link rel="stylesheet" href="css/Index.css" />
+	    <link rel="stylesheet" href="css/Foter.css">
+	    <link rel="stylesheet" href="css/Reservas.css">
+	
+	    <!--Links letras-->
+	    <link rel="preconnect" href="https://fonts.googleapis.com" />
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	    <link
+	      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+	      rel="stylesheet"
+	    />
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	    <title>Aurorium Resort</title>
+	</head>
 
-    <!--Links letras-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <title>Aurorium Resort</title>
-</head>
 <body class="hideScroll">
     <div>
       <header>
@@ -30,8 +32,8 @@
           <div class="links" id="links">
             <div class="wrapper-links">
               <a href="Index.jsp" class="link"><i class="fa fa-home"></i></q> Home</a>
-              <a href="Activides.html" class="link "><i class="fa fa-globe"></i></q> Actividades</a>
-              <a href="#" class="link"><i class="fa fa-bed"></i></q> Habitaciones</a>
+              <a href="Activides.jsp" class="link "><i class="fa fa-globe"></i></q> Actividades</a>
+              <a href="Habitaciones.jsp" class="link"><i class="fa fa-bed"></i></q> Habitaciones</a>
               <a href="Reservas.jsp" class="link active"><i class="fa fa-book"></i></q> Reservar</a>
               <a href="Contacto.jsp" class="link"><i class="fa fa-phone"></i></q> Contacto</a>
             </div>

@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Links CSS-->
     <link rel="stylesheet" href="css/Index.css"/>
-     <link rel="stylesheet" href="css/Foter.css">
+    <link rel="stylesheet" href="css/Foter.css">
 
     <!--Links letras-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,9 +26,9 @@
          <div class="imagenlogo"><img src="img/LogoAurorium1-removebg-preview.png" alt=""></div>
           <div class="links" id="links">
             <div class="wrapper-links">
-              <a href="Index.html" class="link active"><i class="fa fa-home"></i></q> Home</a>
+              <a href="Index.jsp" class="link active"><i class="fa fa-home"></i></q> Home</a>
               <a href="Activides.html" class="link "> <i class="fa fa-globe"></i></q> Actividades</a>
-              <a href="#" class="link"><i class="fa fa-bed"></i></q> Habitaciones</a>
+              <a href="Habitaciones.jsp" class="link"><i class="fa fa-bed"></i></q> Habitaciones</a>
               <a href="Reservas.jsp" class="link"> <i class="fa fa-book"></i></q> Reservar</a>
               <a href="Contacto.jsp" class="link"><i class="fa fa-phone"></i></q> Contacto</a>
             </div>
@@ -87,11 +87,13 @@
       <p class="episode__num">Puntuacion</p>
       <p class="episode__type">Fabuloso</p>
   </div>
-  <div class="card__btns">
+  <a href="Reservas.jsp" style="text-decoration: none;">
+   <div class="card__btns">
       <button class="add-btn">+</button>
       <button class="watch-btn">Ver</button>
   </div>
 </div>
+</a>
 <div class="card" style="margin-left: 105px; background-image: url(img/Habitacion3.jpg);">
   <div class="card-top">
       <p class="card__title">Arnold Bermell</p>
@@ -105,12 +107,13 @@
       <p class="episode__num">Puntuacion</p>
       <p class="episode__type">Increible</p>
   </div>
+   <a href="Reservas.jsp" style="text-decoration: none;">
   <div class="card__btns">
       <button class="add-btn">+</button>
       <button class="watch-btn">Ver</button>
   </div>
 </div>
-
+</a>
 
 
 <div class="card" style="margin-left: 105px; background-image: url(img/21\ Overwater\ Bungalows\ That\ Are\ Truly\ Like\ Heaven\ on\ Earth.jpg);">
@@ -126,12 +129,13 @@
       <p class="episode__num">Puntuacion</p>
       <p class="episode__type">Perfecto</p>
   </div>
+   <a href="Reservas.jsp" style="text-decoration: none;">
   <div class="card__btns">
       <button class="add-btn">+</button>
       <button class="watch-btn">Ver</button>
   </div>
 </div>
-
+</a>
 
 <!--Fotter-->
   <footer>
