@@ -580,4 +580,15 @@ body{
           
           
                 }   
+                
+                .hideScroll {
+  overflow: auto;
+  height: 100px;
+  scrollbar-width: none; /*Firefox*/
+}
+
+/*Webkit*/
+.hideScroll::-webkit-scrollbar {
+  width: 0;
+}
     
