@@ -35,7 +35,6 @@ public class LoginEmpleadosContraseña {
 					.prepareStatement("Select * FROM empleados WHERE Dni=? and Password=?");
 			pSt.setString(1, Dni);
 			pSt.setString(2, Password);
-			pSt.execute();
 
 			ResultSet r = pSt.executeQuery();
 

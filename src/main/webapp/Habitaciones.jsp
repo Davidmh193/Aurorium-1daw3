@@ -199,15 +199,15 @@
       </div>
     </div>
     
-    <div class="row">
-      <ul>
-          <li><a href="#">Contact us</a></li>
-          <li><a href="#">Our Services</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
-          <li><a href="#">Career</a></li>
-      </ul>
-    </div>
+   <div class="row">
+        <ul>
+           	<li><a href="#">Contacta con nosotros</a></li>
+  			<li><a href="#">Nuestras habitaciones</a></li>
+ 		 	<li><a href="#">Politicas de privacidad</a></li>
+  			<li><a href="#">Contacto</a></li>
+ 			<li><a href="Login.jsp"><i class="fa fa-user-o"> </i>Login-empleados</a></li>
+        </ul>
+      </div>
     
     <div class="row">
     Aurorium Copyright © 2023 Aurorium - All rights reserved || Designed By: MariusGuceanu 

@@ -56,7 +56,7 @@
           Encuentra la escapada perfecta para un viaje de ensueño
         </p>
         <div class="button-container">
-          <a href="#" class="button">EXPLORE NOW</a>
+          <a href="Reservas.jsp" class="button">EXPLORE NOW</a>
         </div>
       </div>
     </main>

@@ -31,7 +31,7 @@ public class LoginEmpleados extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		request.getRequestDispatcher("Login.jsp").forward(request, response);
 
 	}
 
@@ -49,7 +49,7 @@ public class LoginEmpleados extends HttpServlet {
 			e.printStackTrace();
 		}
 		
-		if (empleado!=null) {
+		if (empleado.getDni()!=null) {
 
 		HttpSession session = request.getSession();
 
@@ -60,7 +60,7 @@ public class LoginEmpleados extends HttpServlet {
 
 		}else {
 		//Lleva a un usuario al menu
-		response.sendRedirect(request.getContextPath()+"/Login");
+		response.sendRedirect(request.getContextPath()+"/LoginEmpleados");
 
 		}
 	
