@@ -233,7 +233,7 @@
         
         class="fa-regular fa-pen-to-square fa-lg"></i></a></td>
         
-        <td><a href="/Aurorium/Eliminar?q=Cliente&Dni=${cliente.codigo_actividad}"><i
+        <td><a href="/Aurorium/Eliminaractividad?q=Actividad&id=${cliente.codigo_actividad}"><i
         
         class="fa-solid fa-trash-can fa-lg"></i></a></td>
 
@@ -268,13 +268,13 @@
         
         <!-- Gestionar Clases -->
         
-        <th>Cod. Academia</th>
+        <th>Id habitacion</th>
         
-        <th>Cod. Idioma</th>
+        <th>Precio</th>
         
-        <th>Num. Clase</th>
+        <th>Descripcion</th>
         
-        <th>Horario</th>
+        <th>Tipo habitacion</th>
         
         <th>Modificar</th>
         
@@ -288,28 +288,29 @@
         
         <tbody>
         
-        <c:forEach items="${clases}" var="clase">
+        <c:forEach items="${habitaciones1}" var="habitaciones2">
+        <tr>
         
-        <td>${clase.cod_academia}</td>
+        <td>${habitaciones2.idhabitaciones}</td>
         
-        <td>${clase.cod_idioma}</td>
+        <td>${habitaciones2.precio}</td>
         
-        <td>${clase.num_clase}</td>
+        <td>${habitaciones2.descripcion}</td>
         
-        <td>${clase.horario}</td>
+        <td>${habitaciones2.tipohabitacion}</td>
         
         <!-- actualizar y eliminar -->
         
-        <td><a href="#"><i
+       <td><a href="/Aurorium/Modificar?q=Cliente&dni=${habitaciones2.idhabitaciones}"><i
         
         class="fa-regular fa-pen-to-square fa-lg"></i></a></td>
         
-        <td><a href="#"><i
+        <td><a href="/Aurorium/Eliminaractividad?q=Actividad&id=${habitaciones2.idhabitaciones}"><i
         
         class="fa-solid fa-trash-can fa-lg"></i></a></td>
 
-        
-        <td><a href="/MiaKhademia/Eliminar?q=profesor&id=${profesor.dni}"><i
+
+        <td><a href="InsertarClientes${habitaciones2.idhabitaciones}"><i
         
           class="fa fa-user-plus"></i></a></td>
         

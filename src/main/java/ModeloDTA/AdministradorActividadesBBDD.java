@@ -4,12 +4,13 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Date;
 
 import ModeloDTO.Actividades;
 
 public class AdministradorActividadesBBDD {
 	
-	public void modificarActiviades(String Nombre_actividad, String Codigo_actividad,String Fecha_actividad, String max_participantes,String Precio_Actividad) throws ClassNotFoundException {
+	public void modificarActiviades(String Nombre_actividad, String Codigo_actividad,Date Fecha_actividad, String max_participantes,String Precio_Actividad) throws ClassNotFoundException {
 
 		try {
 			Conector conector = new Conector();
@@ -17,7 +18,7 @@ public class AdministradorActividadesBBDD {
 
 			PreparedStatement pSt = conector.getCon().prepareStatement("UPDATE actividades SET Nombre_Actividad=? , Fecha_Actividad=?, Max_Participantes=?,Precio_Actividad=? WHERE Codigo_Actividad = ?");
 			pSt.setString(1, Nombre_actividad);
-			pSt.setString(2, Fecha_actividad);
+			pSt.setDate(5, new java.sql.Date( Fecha_actividad.getTime()));
 			pSt.setString(3, max_participantes);
 			pSt.setString(4, Precio_Actividad);
 			pSt.setString(6, Codigo_actividad);
@@ -45,7 +46,7 @@ public class AdministradorActividadesBBDD {
 		}
 	}
 		
-		public void InsertarActividades(String Nombre_actividad, String Codigo_actividad,String Fecha_actividad, String max_participantes,String Precio_Actividad) throws ClassNotFoundException{
+		public void InsertarActividades(String Nombre_actividad, String Codigo_actividad,Date Fecha_actividad, String max_participantes,String Precio_Actividad) throws ClassNotFoundException{
 			try {
 				Conector conector = new Conector();
 				conector.conectar();
@@ -53,7 +54,7 @@ public class AdministradorActividadesBBDD {
 				PreparedStatement pSt = conector.getCon().prepareStatement("INSERT INTO actividades (Nombre_Actividad, Codigo_Actividad,Fecha_Actividad, Max_Participantes,Precio_Actividad ) Values (?,?,?,?,?)");
 				pSt.setString(1, Nombre_actividad);
 				pSt.setString(2, Codigo_actividad);
-				pSt.setString(3, Fecha_actividad);
+				pSt.setDate(5, new java.sql.Date( Fecha_actividad.getTime()));
 				pSt.setString(4, max_participantes);
 				pSt.setString(5, Precio_Actividad);
 				pSt.execute();
