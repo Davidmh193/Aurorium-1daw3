@@ -172,15 +172,6 @@
         
         </c:forEach>
         
-        <tr>
-        
-        <td colspan="10" class="text-center"><a
-        
-        href="/MiaKhademia/Insertar?q=profesor"><i
-        
-        class="fa-solid fa-plus fa-lg"></i></a></td>
-        
-        </tr>
         
         </tbody>
         
@@ -224,28 +215,30 @@
         
         <tbody>
         
-        <c:forEach items="${idiomas}" var="idioma">
+        <c:forEach items="${actividadescreadas1}" var="actividadescr">
+        <tr>
         
-        <td>${idioma.codigo_idioma}</td>
+        <td>${actividadescr.nombre_actividad}</td>
         
-        <td>${idioma.nombre}</td>
+        <td>${actividadescr.codigo_actividad}</td>
         
-        <td>${idioma.num_plazas}</td>
+        <td>${actividadescr.fecha_actividad}</td>
         
-        <td>${idioma.num_plazas}</td>
+        <td>${actividadescr.max_participantes}</td>
 
-        <td>${idioma.num_plazas}</td>
+        <td>${actividadescr.precio_Actividad}</td>
         <!-- actualizar y eliminar -->
         
-        <td><a href="#"><i
+     <td><a href="/Aurorium/Modificar?q=Cliente&dni=${cliente.codigo_actividad}"><i
         
         class="fa-regular fa-pen-to-square fa-lg"></i></a></td>
         
-        <td><a href="#"><i
+        <td><a href="/Aurorium/Eliminar?q=Cliente&Dni=${cliente.codigo_actividad}"><i
         
         class="fa-solid fa-trash-can fa-lg"></i></a></td>
 
-        <td><a href="/MiaKhademia/Eliminar?q=profesor&id=${profesor.dni}"><i
+
+        <td><a href="InsertarClientes${cliente.codigo_actividad}"><i
         
           class="fa fa-user-plus"></i></a></td>
         
