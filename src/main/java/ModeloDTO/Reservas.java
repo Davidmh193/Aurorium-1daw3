@@ -3,13 +3,15 @@ package ModeloDTO;
 import java.util.Date;
 
 public class Reservas {
-	private int IdHabitacion;
+	private String IdHabitacion;
 	private String DniClientes;
 	private Date Fecha_inicio;
-	public int getIdHabitacion() {
+	private Date Fecha_salida;
+
+	public String getIdHabitacion() {
 		return IdHabitacion;
 	}
-	public void setIdHabitacion(int idHabitacion) {
+	public void setIdHabitacion(String idHabitacion) {
 		IdHabitacion = idHabitacion;
 	}
 	public String getDniClientes() {
@@ -30,6 +32,6 @@ public class Reservas {
 	public void setFecha_salida(Date fecha_salida) {
 		Fecha_salida = fecha_salida;
 	}
-	private Date Fecha_salida;
+
 
 }

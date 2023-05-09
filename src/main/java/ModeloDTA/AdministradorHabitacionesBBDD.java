@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import ModeloDTO.Habitaciones;
 
 public class AdministradorHabitacionesBBDD {
+	
+	//muestra las habitaciones
 	public ArrayList<Habitaciones> gethabitaciones() throws SQLException {
 		ArrayList<Habitaciones> habitaciones = new ArrayList<>();
 		Conector conector = new Conector();
@@ -29,5 +31,9 @@ public class AdministradorHabitacionesBBDD {
 		return habitaciones;
 
 	}
+	
+	//Insertar habitaciones
+	
+	
 
 }
