@@ -33,11 +33,16 @@ public class AdministradorClientesBBDD {
 	
 	//Da de baja a los Clientes.
 	public void bajaUsuario(String Dni) throws ClassNotFoundException {
+		String sentencia="DELETE FROM inscripciones WHERE Dni_cliente=?";
 		try {
 			Conector conector = new Conector();
 			conector.conectar();
 
-			PreparedStatement pSt = conector.getCon().prepareStatement("DELETE FROM clientes WHERE Dni=?");
+			PreparedStatement pSt = conector.getCon().prepareStatement(sentencia);
+			pSt.setString(1, Dni);
+			pSt.execute();
+			sentencia="DELETE FROM clientes WHERE Dni=?";
+			pSt = conector.getCon().prepareStatement(sentencia);
 			pSt.setString(1, Dni);
 			pSt.execute();
 		} catch (SQLException e) {

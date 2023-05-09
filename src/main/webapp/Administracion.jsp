@@ -163,7 +163,7 @@
 													class="fa-regular fa-pen-to-square fa-lg"></i></a></td>
 
 											<td><a
-												href="/Aurorium/Eliminar?q=Cliente&Dni=${cliente.dni}"><i
+												href="/Aurorium/EliminarClientes?id=${cliente.dni}&tipo=cliente"><i
 													class="fa-solid fa-trash-can fa-lg"></i></a></td>
 
 
@@ -230,7 +230,7 @@
 													class="fa-regular fa-pen-to-square fa-lg"></i></a></td>
 
 											<td><a
-												href="/Aurorium/Eliminaractividad?q=Actividad&id=${cliente.codigo_actividad}"><i
+												href="/Aurorium/Eliminar?codigo=${cliente.codigo_actividad}"><i
 													class="fa-solid fa-trash-can fa-lg"></i></a></td>
 
 

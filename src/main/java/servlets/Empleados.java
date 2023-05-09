@@ -49,7 +49,6 @@ public class Empleados extends HttpServlet {
 		request.setAttribute("empleados", empleado);
 
 		request.getRequestDispatcher("Empleados.jsp").forward(request, response);
-
 	}
 
 	/**

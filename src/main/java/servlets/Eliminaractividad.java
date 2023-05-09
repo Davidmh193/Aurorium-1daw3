@@ -30,7 +30,7 @@ public class Eliminaractividad extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String cod_actividad= request.getParameter("id");
+		String cod_actividad= request.getParameter("codigo");
 		AdministradorActividadesBBDD mactividades =new AdministradorActividadesBBDD();		
 		try {
 			mactividades.EliminarActividad(cod_actividad);
