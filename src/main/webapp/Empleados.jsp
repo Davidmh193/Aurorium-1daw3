@@ -125,8 +125,6 @@
 
 										<th>Eliminar</th>
 
-										<th>Insertar</th>
-
 									</tr>
 
 								</thead>
@@ -161,12 +159,8 @@
 													class="fa-regular fa-pen-to-square fa-lg"></i></a></td>
 
 											<td><a
-												href="/Aurorium/Eliminar?q=Cliente&Dni=${empleado.dni}"><i
+												href="/Aurorium/EliminarDatos?id=${empleado.dni}&tipo=empleados"><i
 													class="fa-solid fa-trash-can fa-lg"></i></a></td>
-
-
-											<td><a href="InsertarClientes${empleado.dni}"><i
-													class="fa fa-user-plus"></i></a></td>
 
 										</tr>
 
