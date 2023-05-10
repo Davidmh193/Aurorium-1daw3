@@ -163,7 +163,7 @@
 													class="fa-regular fa-pen-to-square fa-lg"></i></a></td>
 
 											<td><a
-												href="/Aurorium/EliminarClientes?id=${cliente.dni}&tipo=cliente"><i
+												href="/Aurorium/EliminarDatos?id=${cliente.dni}&tipo=cliente"><i
 													class="fa-solid fa-trash-can fa-lg"></i></a></td>
 
 
@@ -226,16 +226,16 @@
 											<!-- actualizar y eliminar -->
 
 											<td><a
-												href="/Aurorium/Modificar?q=Cliente&dni=${cliente.codigo_actividad}"><i
+												href="/Aurorium/Modificar?q=Cliente&dni=${actividadescr.codigo_actividad}"><i
 													class="fa-regular fa-pen-to-square fa-lg"></i></a></td>
-
+													
 											<td><a
-												href="/Aurorium/Eliminar?codigo=${cliente.codigo_actividad}"><i
+												href="/Aurorium/EliminarDatos?id=${actividadescr.codigo_actividad}&tipo=actividad"><i
 													class="fa-solid fa-trash-can fa-lg"></i></a></td>
 
 
 											<td><a
-												href="InsertarClientes${cliente.codigo_actividad}"><i
+												href="InsertarClientes${actividadescr.codigo_actividad}"><i
 													class="fa fa-user-plus"></i></a></td>
 
 										</tr>
@@ -298,9 +298,9 @@
 											<td><a
 												href="/Aurorium/Modificar?q=Cliente&dni=${habitaciones2.idhabitaciones}"><i
 													class="fa-regular fa-pen-to-square fa-lg"></i></a></td>
-
+													
 											<td><a
-												href="/Aurorium/Eliminaractividad?q=Actividad&id=${habitaciones2.idhabitaciones}"><i
+												href="/Aurorium/EliminarDatos?id=${habitaciones2.idhabitaciones}&tipo=habitaciones"><i
 													class="fa-solid fa-trash-can fa-lg"></i></a></td>
 
 

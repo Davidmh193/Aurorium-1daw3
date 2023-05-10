@@ -32,6 +32,19 @@ public class AdministradorHabitacionesBBDD {
 
 	}
 	
+	public void EliminarHabitacion(String Id_Habitacion) throws ClassNotFoundException {
+		try {
+			Conector conector = new Conector();
+			conector.conectar();
+
+			PreparedStatement pSt = conector.getCon().prepareStatement("DELETE FROM habitaciones WHERE Id_Habitacion=?");
+			pSt.setString(1, Id_Habitacion);
+			pSt.execute();
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+		}
+	}
 	//Insertar habitaciones
 	
 	

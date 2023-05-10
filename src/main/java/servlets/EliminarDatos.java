@@ -10,18 +10,19 @@ import javax.servlet.http.HttpServletResponse;
 
 import ModeloDTA.AdministradorActividadesBBDD;
 import ModeloDTA.AdministradorClientesBBDD;
+import ModeloDTA.AdministradorHabitacionesBBDD;
 
 /**
  * Servlet implementation class EliminarClientes
  */
-@WebServlet("/EliminarClientes")
-public class EliminarClientes extends HttpServlet {
+@WebServlet("/EliminarDatos")
+public class EliminarDatos extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public EliminarClientes() {
+	public EliminarDatos() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -36,6 +37,8 @@ public class EliminarClientes extends HttpServlet {
 		String tipo = request.getParameter("tipo");
 		AdministradorClientesBBDD adminClientes = new AdministradorClientesBBDD();
 		AdministradorActividadesBBDD adminActividades = new AdministradorActividadesBBDD();
+		AdministradorHabitacionesBBDD habitaciones= new AdministradorHabitacionesBBDD();
+		
 		try {
 			switch(tipo) {
 			case "cliente":
@@ -44,6 +47,11 @@ public class EliminarClientes extends HttpServlet {
 			case "actividad":
 				adminActividades.EliminarActividad(id);
 				break;
+				
+			case "habitaciones":
+				habitaciones.EliminarHabitacion(id);
+				break;
+			
 			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
