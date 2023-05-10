@@ -158,10 +158,11 @@
 
 		<div class="row">
 			<ul>
-				<li><a href="#">Contacta con nosotros</a></li>
-				<li><a href="#">Nuestras habitaciones</a></li>
-				<li><a href="#">Politicas de privacidad</a></li>
-				<li><a href="#">Contacto</a></li>
+				<li>Contacta con nosotros: auroriumresort@gmail.com</li>
+				<li><a href="Habitaciones.jsp">Nuestras habitaciones</a></li>
+				<li><a href="img/Privacy Policy.pdf">Politicas de
+						privacidad</a></li>
+				<li><a href="Contacto.jsp">Contacto</a></li>
 				<li><a href="Login.jsp"><i class="fa fa-user-o"> </i>Login-empleados</a></li>
 			</ul>
 		</div>
