@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -96,14 +96,14 @@
 </body>
 <div class="CuadroBlanco1">
 	<div>
-		<h2>¡Bienvenidos a Aurorium, su próximo destino vacacional!</h2>
+		<h2>Â¡Bienvenidos a Aurorium, su prÃ³ximo destino vacacional!</h2>
 		<p style="margin-bottom: 5.5%;">
-			<br> En Aurorium, ofrecemos una experiencia de hospedaje única e
-			inolvidable. Nuestras habitaciones están diseñadas para brindarle la
-			máxima comodidad y relajación durante su estadía. No importa si está
+			<br> En Aurorium, ofrecemos una experiencia de hospedaje Ãºnica e
+			inolvidable. Nuestras habitaciones estÃ¡n diseÃ±adas para brindarle la
+			mÃ¡xima comodidad y relajaciÃ³n durante su estadÃ­a. No importa si estÃ¡
 			buscando un lugar para relajarse o un destino para explorar y
-			descubrir nuevos lugares, Aurorium es la elección perfecta para su
-			próxima aventura vacacional. ¡Reserve ahora y descubra todo lo que
+			descubrir nuevos lugares, Aurorium es la elecciÃ³n perfecta para su
+			prÃ³xima aventura vacacional. Â¡Reserve ahora y descubra todo lo que
 			Aurorium tiene para ofrecer!
 		</p>
 
@@ -167,7 +167,7 @@
 		</div>
 
 		<div class="row">
-			<div clas="DesignedBy">Aurorium Copyright © 2023 Aurorium - All
+			<div clas="DesignedBy">Aurorium Copyright Â© 2023 Aurorium - All
 				rights reserved || Designed By: Davidmh_7</div>
 		</div>
 	</div>

@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -50,10 +50,10 @@
     <main class="main-page">
       <div class="hero-container">
         <h1 class="title">
-          Descubre el mundo, relájate en Aurorium. Tu hogar lejos del hogar
+          Descubre el mundo, relÃ¡jate en Aurorium. Tu hogar lejos del hogar
         </h1>
         <p class="description">
-          Encuentra la escapada perfecta para un viaje de ensueño
+          Encuentra la escapada perfecta para un viaje de ensueÃ±o
         </p>
         <div class="button-container">
           <a href="Reservas.jsp" class="button">EXPLORE NOW</a>
@@ -64,12 +64,12 @@
 
 <div class="texto"><p>Nuestra historia</p>
 
-<div class="textoinicio"> En el año 2012, dos amigos de la universidad, David y Marius, decidieron tomarse unas vacaciones juntos. Mientras buscaban alojamiento, se dieron cuenta de lo difícil que era encontrar la combinación perfecta de precio y calidad. Frustrados con las plataformas de reserva de hoteles existentes, decidieron crear su propia plataforma: "Aurorium Resort"
+<div class="textoinicio"> En el aÃ±o 2012, dos amigos de la universidad, David y Marius, decidieron tomarse unas vacaciones juntos. Mientras buscaban alojamiento, se dieron cuenta de lo difÃ­cil que era encontrar la combinaciÃ³n perfecta de precio y calidad. Frustrados con las plataformas de reserva de hoteles existentes, decidieron crear su propia plataforma: "Aurorium Resort"
 <br></br>
-  Tom y Sarah comenzaron a trabajar en la plataforma en su tiempo libre mientras aún mantenían sus trabajos de tiempo completo. Finalmente, en 2022, lanzaron Aurorium al público. A diferencia de otras plataformas, Aurorium se centró en la transparencia de precios y la experiencia del usuario, ofreciendo a los viajeros una forma fácil de reservar habitaciones a precios asequibles.
-  A pesar de la competencia feroz en el mercado de las reservas de hoteles en línea, Aurorium logró ganar una base de clientes leales y creció rápidamente. Tom y Sarah atribuyen su éxito a su enfoque centrado en el usuario y su capacidad para adaptarse rápidamente a las necesidades del mercado.
+  David y Marius comenzaron a trabajar en la plataforma en su tiempo libre mientras aÃºn mantenÃ­an sus trabajos de tiempo completo. Finalmente, en 2022, lanzaron Aurorium al pÃºblico. A diferencia de otras plataformas, Aurorium se centrÃ³ en la transparencia de precios y la experiencia del usuario, ofreciendo a los viajeros una forma fÃ¡cil de reservar habitaciones a precios asequibles.
+  A pesar de la competencia feroz en el mercado de las reservas de hoteles en lÃ­nea, Aurorium logrÃ³ ganar una base de clientes leales y creciÃ³ rÃ¡pidamente. Tom y Sarah atribuyen su Ã©xito a su enfoque centrado en el usuario y su capacidad para adaptarse rÃ¡pidamente a las necesidades del mercado.
   <br></br>
-  Hoy en día, Aurorium es una plataforma de reserva de hoteles líder en el mercado y sigue siendo administrada por Tom y Sarah, quienes han creado una cultura empresarial única que valora la transparencia, la honestidad y la colaboración.</div>
+  Hoy en dÃ­a, Aurorium es una plataforma de reserva de hoteles lÃ­der en el mercado y sigue siendo administrada por sus fundadores, quienes han creado una cultura empresarial Ãºnica que valora la transparencia, la honestidad y la colaboraciÃ³n.</div>
 </div> 
 <div class="imagenestexto"></div>
 <div class="dash"></div>
@@ -160,14 +160,14 @@
         <ul>
            	<li><a href="#">Contacta con nosotros</a></li>
   			<li><a href="#">Nuestras habitaciones</a></li>
- 		 	<li><a href="#">Politicas de privacidad</a></li>
+ 		 	<li><a href="img/Privacy Policy.pdf">Politicas de privacidad</a></li>
   			<li><a href="#">Contacto</a></li>
  			<li><a href="Login.jsp"><i class="fa fa-user-o"> </i>Login-empleados</a></li>
         </ul>
       </div>
       
       	<div class="row">
-      	Aurorium Copyright © 2023 Aurorium - All rights reserved || Designed By: Davidmh_7 
+      	Aurorium Copyright Â© 2023 Aurorium - All rights reserved || Designed By: Davidmh_7 
       	</div>
     	</div>
     </footer>

@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!DOCTYPE html>
@@ -373,7 +373,7 @@
 			</div>
 
 			<div class="row" style="display: flex; justify-content: center;">
-				Aurorium Copyright © 2023 Aurorium - All rights reserved || Designed
+				Aurorium Copyright Â© 2023 Aurorium - All rights reserved || Designed
 				By: Davidmh_7</div>
 		</div>
 	</footer>
