@@ -50,5 +50,19 @@ public class ContactoBBDD {
 		return contacto;
 
 	}
+	//Elimina los contactos
+	public void EliminarContacto(String contacto) throws ClassNotFoundException {
+		try {
+			Conector conector = new Conector();
+			conector.conectar();
+
+			PreparedStatement pSt = conector.getCon().prepareStatement("DELETE FROM contacto WHERE Dni=?");
+			pSt.setString(1, contacto);
+			pSt.execute();
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+		}
+	}
 
 }

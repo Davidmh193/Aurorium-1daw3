@@ -138,7 +138,7 @@
 
 									
 											<td><a
-												href="/Aurorium/Eliminar?q=Cliente&Dni=${contactosmensajes.dni}"><i
+												href="/Aurorium/ContactoEmpleados?id=${contactosmensajes.dni}&tipo=Eliminarcontacto"><i
 													class="fa-solid fa-trash-can fa-lg"></i></a></td>
 
 										</tr>

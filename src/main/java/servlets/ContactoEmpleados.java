@@ -32,7 +32,22 @@ public class ContactoEmpleados extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String id = request.getParameter("id");
+		String tipo = request.getParameter("tipo");
+		ContactoBBDD contactoEliminar= new ContactoBBDD();
 		
+		try {
+			switch(tipo) {
+			case "Eliminarcontacto":
+				contactoEliminar.EliminarContacto(id);
+				break;
+				
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
 		ContactoBBDD ContactoCliente = new ContactoBBDD();
 		
 		ArrayList<Contacto> contacto = new ArrayList<Contacto>();
