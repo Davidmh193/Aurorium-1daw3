@@ -139,18 +139,13 @@
 
 
 											<td><a
-												href="/Aurorium/Eliminar?q=Cliente&Dni=${contactosmensajes.dni}"><i
+												href="/Aurorium/ContactoEmpleados?id=${contactosmensajes.dni}&tipo=Eliminarcontacto"><i
 													class="fa-solid fa-trash-can fa-lg"></i></a></td>
 
 										</tr>
 
 									</c:forEach>
 
-									<td colspan="11" class="text-center"><a
-										href="/MiaKhademia/Insertar?q=profesor"><i
-											class="fa-solid fa-plus fa-lg"></i></a></td>
-
-									</tr>
 								</tbody>
 
 							</table>

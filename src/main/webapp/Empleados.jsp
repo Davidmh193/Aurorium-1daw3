@@ -53,7 +53,7 @@
 							class="fa fa-archive"></i></q> Administracion</a> <a
 							href="ContactoEmpleados" class="link "><i
 							class="fa fa-address-book-o"></i></q> Contacto</a> <a
-							href="ReservasEmpleados" class="link"><i
+							href="ReservasAdministracionSer" class="link"><i
 							class="fa fa-calendar-check-o"></i></q> Reservas</a> <a href="Empleados"
 							class="link active"><i class="fa fa-users"></i></q> Empleados</a> <a
 							href="" class="link"><i class="fa fa-user-circle"></i></q>
@@ -126,8 +126,6 @@
 
 										<th>Eliminar</th>
 
-										<th>Insertar</th>
-
 									</tr>
 
 								</thead>
@@ -162,12 +160,8 @@
 													class="fa-regular fa-pen-to-square fa-lg"></i></a></td>
 
 											<td><a
-												href="/Aurorium/Eliminar?q=Cliente&Dni=${empleado.dni}"><i
+												href="/Aurorium/Empleadosmodificaciones?id=${empleado.dni}&tipo=empleados"><i
 													class="fa-solid fa-trash-can fa-lg"></i></a></td>
-
-
-											<td><a href="InsertarClientes${empleado.dni}"><i
-													class="fa fa-user-plus"></i></a></td>
 
 										</tr>
 
