@@ -178,7 +178,7 @@
 										Modificar
 										</button>
   											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-   											<form method="POST" action="Modificar" class="form">
+   											<form method="POST" action="ModificarClientes" class="form">
     											<label for="idhabitacion" class="label">Dni</label>
     											<input type="text" id="username" name="dnicliente" required="" class="input">
     											
