@@ -30,6 +30,10 @@ public class ReservasBBDD {
 
 	}
 	
+
+	
+	
+	
 	public ArrayList<Reservas> getReservashabitaciones() throws SQLException {
 		ArrayList<Reservas> reservashabitaciones = new ArrayList<>();
 		Conector conector = new Conector();
@@ -73,5 +77,18 @@ public class ReservasBBDD {
 		conector.cerrar();
 		return actividadescreadas1;
 
+	}
+	public void EliminarReserva(String Reserva) throws ClassNotFoundException {
+		try {
+			Conector conector = new Conector();
+			conector.conectar();
+
+			PreparedStatement pSt = conector.getCon().prepareStatement("DELETE FROM reservas WHERE Dni_Cliente=?");
+			pSt.setString(1, Reserva);
+			pSt.execute();
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+		}
 	}
 }

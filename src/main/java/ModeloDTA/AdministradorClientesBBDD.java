@@ -10,19 +10,19 @@ import ModeloDTO.Clientes;
 public class AdministradorClientesBBDD {
 
 	//Modifica los clientes
-	public void modificarCliente(String Dni, String Nombre,String apellido, String telefono,String Direccion, String Localidad) throws ClassNotFoundException {
+	public void modificarCliente(Clientes cliente) throws ClassNotFoundException {
 
 		try {
 			Conector conector = new Conector();
 			conector.conectar();
 
 			PreparedStatement pSt = conector.getCon().prepareStatement("UPDATE clientes SET Nombre=? , Apellido=?, Telefono=?,Direccion=?,Localidad=?  WHERE Dni = ?");
-			pSt.setString(1, Nombre);
-			pSt.setString(2, apellido);
-			pSt.setString(3, telefono);
-			pSt.setString(4, Direccion);
-			pSt.setString(5, Localidad);
-			pSt.setString(6, Dni);
+			pSt.setString(1, cliente.getNombre());
+			pSt.setString(2, cliente.getApellidos());
+			pSt.setString(3, cliente.getTelefono());
+			pSt.setString(4, cliente.getDireccion());
+			pSt.setString(5, cliente.getLocalidad());
+			pSt.setString(6, cliente.getDni());
 			pSt.execute();
 		} catch (SQLException e) {
 

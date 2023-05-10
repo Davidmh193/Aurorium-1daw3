@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import ModeloDTA.AdministradorActividadesBBDD;
 import ModeloDTA.AdministradorClientesBBDD;
 import ModeloDTA.AdministradorHabitacionesBBDD;
+import ModeloDTO.Clientes;
 
 /**
  * Servlet implementation class EliminarClientes
@@ -38,6 +39,8 @@ public class EliminarDatos extends HttpServlet {
 		AdministradorClientesBBDD adminClientes = new AdministradorClientesBBDD();
 		AdministradorActividadesBBDD adminActividades = new AdministradorActividadesBBDD();
 		AdministradorHabitacionesBBDD habitaciones= new AdministradorHabitacionesBBDD();
+		
+		AdministradorClientesBBDD modificarclientes = new AdministradorClientesBBDD();
 
 		
 		try {
@@ -48,15 +51,11 @@ public class EliminarDatos extends HttpServlet {
 			case "actividad":
 				adminActividades.EliminarActividad(id);
 				break;
-				
 			case "habitaciones":
 				habitaciones.EliminarHabitacion(id);
 				break;
-				
 			}
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		}
 		response.sendRedirect(request.getContextPath()+"/Administracion");
 	}

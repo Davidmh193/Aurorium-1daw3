@@ -142,11 +142,11 @@
 											<!-- actualizar y eliminar -->
 
 											<td><a
-												href="/Aurorium/Modificar?q=Cliente&dni=${Reserva.dniClientes}"><i
+												href="/Aurorium/Modificar?q=Cliente&dni=${reserva.dniClientes}"><i
 													class="fa-regular fa-pen-to-square fa-lg"></i></a></td>
 
 											<td><a
-												href="/Aurorium/Eliminar?q=Cliente&Dni=${Reserva.dniClientes}"><i
+												href="/Aurorium/EliminarReserva?id=${reserva.dniClientes}&tipo=Reserva"><i
 													class="fa-solid fa-trash-can fa-lg"></i></a></td>
 										</tr>
 

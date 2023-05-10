@@ -12,6 +12,8 @@
 <!--Links CSS-->
 <link rel="stylesheet" href="css/Index.css" />
 <link rel="stylesheet" href="css/Foter.css">
+<link rel="stylesheet" href="css/Administracion.css">
+
 
 
 <!--Links letras-->
@@ -158,9 +160,48 @@
 
 											<!-- actualizar y eliminar -->
 
-											<td><a
-												href="/Aurorium/Modificar?q=Cliente&dni=${cliente.dni}"><i
-													class="fa-regular fa-pen-to-square fa-lg"></i></a></td>
+									<td>
+											<div class="dropdown">
+  										<button class="continue-application" id="dropdownMenuButton" data-toggle="dropdown">
+										    <div>
+										        <div class="pencil"></div>
+										        <div class="folder">
+										            <div class="top">
+										                <svg viewBox="0 0 24 27">
+										                    <path d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z"></path>
+										                </svg>
+										            </div>
+										            <div class="paper"></div>
+										        </div>
+										    </div>
+										Modificar
+										</button>
+  											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+   											<form method="POST" action="Modificar" class="form">
+    											<label for="idhabitacion" class="label">Dni</label>
+    											<input type="text" id="username" name="dnicliente" required="" class="input">
+    											
+											    <label for="precio" class="label">Nombre</label>
+											  	<input type="text" id="email" name="nombrecliente" required="" class="input">
+											  	
+											    <label for="password" class="label">Apellido</label>
+											    <input type="descripcion" id="password" name="apellidocliente" required="" class="input">
+											    
+											     <label for="tipohabitacion" class="label">Telefono</label>
+											    <input type="text" id="username" name="telefonocliente" required="" class="input">
+											    
+											      <label for="tipohabitacion" class="label">Direccion</label>
+											    <input type="text" id="username" name="Direccioncliente" required="" class="input">
+											    
+											      <label for="tipohabitacion" class="label">Localidad</label>
+											    <input type="text" id="username" name="Localidadcliente" required="" class="input">
+											    <button type="submit" class="submit">Modificar</button>
+  												</form >
+  												</div>
+												</div>
+											
+											
+											</td>
 
 											<td><a
 												href="/Aurorium/EliminarDatos?id=${cliente.dni}&tipo=cliente"><i
@@ -225,10 +266,42 @@
 											<td>${actividadescr.precio_Actividad}</td>
 											<!-- actualizar y eliminar -->
 
-											<td><a
-												href="/Aurorium/Modificar?q=Cliente&dni=${actividadescr.codigo_actividad}"><i
-													class="fa-regular fa-pen-to-square fa-lg"></i></a></td>
-													
+											<td>
+											<div class="dropdown">
+  										<button class="continue-application" id="dropdownMenuButton" data-toggle="dropdown">
+										    <div>
+										        <div class="pencil"></div>
+										        <div class="folder">
+										            <div class="top">
+										                <svg viewBox="0 0 24 27">
+										                    <path d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z"></path>
+										                </svg>
+										            </div>
+										            <div class="paper"></div>
+										        </div>
+										    </div>
+										Modificar
+										</button>
+  											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+   											<form method="POST" action="Modificar" class="form">
+    											<label for="idhabitacion" class="label">Nombre Actividad</label>
+    											<input type="text" id="username" name="NombreActividad" required="" class="input">
+    											
+											    <label for="precio" class="label">Codigo Actividad</label>
+											  	<input type="text" id="email" name="CodigoActividad" required="" class="input">
+											  	
+											    <label for="password" class="label">Participantes</label>
+											    <input type="descripcion" id="password" name="Participantes" required="" class="input">
+											    
+											     <label for="tipohabitacion" class="label">PrecioActividad</label>
+											    <input type="text" id="username" name="PrecioActividad" required="" class="input">
+											    
+											    <button type="submit" class="submit">Modificar</button>
+  												</form>
+  												</div>
+												</div>
+											
+											</td>
 											<td><a
 												href="/Aurorium/EliminarDatos?id=${actividadescr.codigo_actividad}&tipo=actividad"><i
 													class="fa-solid fa-trash-can fa-lg"></i></a></td>
@@ -295,9 +368,43 @@
 
 											<!-- actualizar y eliminar -->
 
-											<td><a
-												href="/Aurorium/Modificar?q=Cliente&dni=${habitaciones2.idhabitaciones}"><i
-													class="fa-regular fa-pen-to-square fa-lg"></i></a></td>
+											<td>
+											<div class="dropdown">
+  										<button class="continue-application" id="dropdownMenuButton" data-toggle="dropdown">
+										    <div>
+										        <div class="pencil"></div>
+										        <div class="folder">
+										            <div class="top">
+										                <svg viewBox="0 0 24 27">
+										                    <path d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z"></path>
+										                </svg>
+										            </div>
+										            <div class="paper"></div>
+										        </div>
+										    </div>
+										Modificar
+										</button>
+  											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+   											<form method="POST" action="Modificar" class="form">
+    											<label for="idhabitacion" class="label">Username</label>
+    											<input type="text" id="username" name="idhabitacion" required="" class="input">
+    											
+											    <label for="precio" class="label">Precio</label>
+											  	<input type="text" id="email" name="precio" required="" class="input">
+											  	
+											    <label for="password" class="label">Descripcion</label>
+											    <input type="descripcion" id="password" name="descripcion" required="" class="input">
+											    
+											     <label for="tipohabitacion" class="label">Username</label>
+											    <input type="text" id="username" name="tipohabitacion" required="" class="input">
+											    
+											    <button type="submit" class="submit">Modificar</button>
+  												</form>
+  												</div>
+												</div>
+											
+											
+											</td>
 													
 											<td><a
 												href="/Aurorium/EliminarDatos?id=${habitaciones2.idhabitaciones}&tipo=habitaciones"><i
