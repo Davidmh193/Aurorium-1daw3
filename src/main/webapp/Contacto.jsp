@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -53,7 +53,7 @@
             <div></div>
             <div></div>
           </div>
-          <div class="textoh2"><p class = "text">¡Nos encantaría saber de ti! En Aurorium estamos comprometidos en brindar el mejor servicio a nuestros clientes y resolver todas tus inquietudes. Si tienes preguntas acerca de nuestros productos y servicios, o si necesitas ayuda en cualquier aspecto, no dudes en contactarnos. Puedes llenar el formulario a continuación, o si prefieres, puedes encontrarnos en nuestras redes sociales. ¡Estamos ansiosos por escucharte y ayudarte en todo lo que podamos!</p>
+          <div class="textoh2"><p class = "text">Â¡Nos encantarÃ­a saber de ti! En Aurorium estamos comprometidos en brindar el mejor servicio a nuestros clientes y resolver todas tus inquietudes. Si tienes preguntas acerca de nuestros productos y servicios, o si necesitas ayuda en cualquier aspecto, no dudes en contactarnos. Puedes llenar el formulario a continuaciÃ³n, o si prefieres, puedes encontrarnos en nuestras redes sociales. Â¡Estamos ansiosos por escucharte y ayudarte en todo lo que podamos!</p>
         </div></div>
   
   
@@ -77,7 +77,7 @@
             <div>
               <span><i class = "fas fa-clock"></i></span>
               <span>Abierto</span>
-              <span class = "text">Lunes - Domingo (9:30 de la mañana a 4:00 de la mañana)</span>
+              <span class = "text">Lunes - Domingo (9:30 de la maÃ±ana a 4:00 de la maÃ±ana)</span>
             </div>
           </div>
   
@@ -142,7 +142,7 @@
       </div>
       
       	<div class="row">
-      	Aurorium Copyright © 2023 Aurorium - All rights reserved || Designed By: Davidmh_7 
+      	Aurorium Copyright Â© 2023 Aurorium - All rights reserved || Designed By: Davidmh_7 
       	</div>
     	</div>
     </footer>
