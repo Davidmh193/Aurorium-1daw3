@@ -39,7 +39,7 @@ public class EliminarDatos extends HttpServlet {
 		AdministradorClientesBBDD adminClientes = new AdministradorClientesBBDD();
 		AdministradorActividadesBBDD adminActividades = new AdministradorActividadesBBDD();
 		AdministradorHabitacionesBBDD habitaciones= new AdministradorHabitacionesBBDD();
-		AdministradoresBBDD empleados = new AdministradoresBBDD();
+
 		
 		try {
 			switch(tipo) {
@@ -53,10 +53,7 @@ public class EliminarDatos extends HttpServlet {
 			case "habitaciones":
 				habitaciones.EliminarHabitacion(id);
 				break;
-			case"empleados":
-				empleados.bajaEmpleados(id);
-				break;
-			
+				
 			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

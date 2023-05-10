@@ -159,7 +159,7 @@
 													class="fa-regular fa-pen-to-square fa-lg"></i></a></td>
 
 											<td><a
-												href="/Aurorium/EliminarDatos?id=${empleado.dni}&tipo=empleados"><i
+												href="/Aurorium/Empleadosmodificaciones?id=${empleado.dni}&tipo=empleados"><i
 													class="fa-solid fa-trash-can fa-lg"></i></a></td>
 
 										</tr>
