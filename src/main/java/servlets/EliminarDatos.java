@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import ModeloDTA.AdministradorActividadesBBDD;
 import ModeloDTA.AdministradorClientesBBDD;
 import ModeloDTA.AdministradorHabitacionesBBDD;
-import ModeloDTA.AdministradoresBBDD;
 
 /**
  * Servlet implementation class EliminarClientes

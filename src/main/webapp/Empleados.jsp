@@ -53,7 +53,7 @@
 							class="fa fa-archive"></i></q> Administracion</a> <a
 							href="ContactoEmpleados" class="link "><i
 							class="fa fa-address-book-o"></i></q> Contacto</a> <a
-							href="ReservasEmpleados" class="link"><i
+							href="ReservasAdministracionSer" class="link"><i
 							class="fa fa-calendar-check-o"></i></q> Reservas</a> <a href="Empleados"
 							class="link active"><i class="fa fa-users"></i></q> Empleados</a> <a href=""
 							class="link"><i class="fa fa-user-circle"></i></q> Log-out</a>
