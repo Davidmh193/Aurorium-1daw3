@@ -86,7 +86,7 @@
 			del usuario, ofreciendo a los viajeros una forma fácil de reservar
 			habitaciones a precios asequibles. A pesar de la competencia feroz en
 			el mercado de las reservas de hoteles en línea, Aurorium logró ganar
-			una base de clientes leales y creció rápidamente. Tom y Sarah
+			una base de clientes leales y creció rápidamente. Sus creadores
 			atribuyen su éxito a su enfoque centrado en el usuario y su capacidad
 			para adaptarse rápidamente a las necesidades del mercado. <br></br>
 			Hoy en día, Aurorium es una plataforma de reserva de hoteles líder en
