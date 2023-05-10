@@ -9,7 +9,7 @@ import ModeloDTO.Clientes;
 
 public class AdministradorClientesBBDD {
 
-	
+	//Modifica los clientes
 	public void modificarCliente(String Dni, String Nombre,String apellido, String telefono,String Direccion, String Localidad) throws ClassNotFoundException {
 
 		try {
@@ -31,7 +31,7 @@ public class AdministradorClientesBBDD {
 
 	}
 	
-	//Da de baja a los Clientes.
+	//Da de baja a los Clientes y las actividades que haya sido registrado.
 	public void bajaUsuario(String Dni) throws ClassNotFoundException {
 		String sentencia="DELETE FROM inscripciones WHERE Dni_cliente=?";
 		try {
@@ -74,6 +74,8 @@ public class AdministradorClientesBBDD {
 
 	}
 	
+	
+	// Visualiza los clientes
 	public ArrayList<Clientes> getClientes() throws SQLException {
 		ArrayList<Clientes> clientes = new ArrayList<>();
 		Conector conector = new Conector();
