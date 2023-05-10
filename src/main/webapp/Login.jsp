@@ -27,7 +27,7 @@
 				</div>
 				<div class="col-md-6 right">
 					<div class="input-box">
-						<header>LOG-IN Empelados</header>
+						<header>LOG-IN Empleados</header>
 
 						<form method="post" action="LoginEmpleados">
 							<div class="input-field">

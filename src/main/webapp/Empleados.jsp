@@ -56,7 +56,7 @@
 							href="ReservasAdministracionSer" class="link"><i
 							class="fa fa-calendar-check-o"></i></q> Reservas</a> <a href="Empleados"
 							class="link active"><i class="fa fa-users"></i></q> Empleados</a> <a
-							href="" class="link"><i class="fa fa-user-circle"></i></q>
+							href="Logout" class="link"><i class="fa fa-user-circle"></i></q>
 							Log-out</a>
 					</div>
 				</div>
