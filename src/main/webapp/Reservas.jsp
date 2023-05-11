@@ -67,6 +67,7 @@
 				<p class="descripcion">Descubre nuestras suites increibles y
 					comodas para un gran descanso durante tus vacaciones.</p>
 				<div class="botoncitos"></div>
+				
 				<form method="post" action="Reservas">
 					<input type="date" class="my-date-picker"
 						style="margin-bottom: 2%;" name="FechaEntrada"> <input
@@ -88,6 +89,7 @@
 					<button class="my-date-picker" type="submit"
 						style="margin-bottom: 0.3%;">RESERVAR</button>
 				</form>
+				
 			</div>
 		</div>
 
