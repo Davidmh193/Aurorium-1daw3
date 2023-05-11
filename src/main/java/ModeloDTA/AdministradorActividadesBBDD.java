@@ -9,6 +9,8 @@ import ModeloDTO.Actividades;
 
 public class AdministradorActividadesBBDD {
 	
+	
+	//Modifica las actividades ya creadas
 	public void modificarActiviades(String Nombre_actividad, int participantes, double precio,String Codigo_actividad) throws ClassNotFoundException {
 
 		try {
@@ -29,7 +31,7 @@ public class AdministradorActividadesBBDD {
 	}
 	
 	
-	
+	//Elimina las actividades ya creadas cogiendo el codigo de la actividad para eliminar
 	public void EliminarActividad(String Codigo_Actividad) throws ClassNotFoundException {
 		String sentencia="DELETE FROM inscripciones WHERE Codigo_Actividad=?";
 		try {
@@ -47,7 +49,7 @@ public class AdministradorActividadesBBDD {
 			e.printStackTrace();
 		}
 	}
-		
+		//Inserta las actividades nuevas
 		public void InsertarActividades(String Nombre_actividad, String Codigo_actividad, String max_participantes,String Precio_Actividad) throws ClassNotFoundException{
 			try {
 				Conector conector = new Conector();
@@ -66,7 +68,7 @@ public class AdministradorActividadesBBDD {
 			}
 	}
 	
-		
+		//con esto visualizas las actividades
 		public ArrayList<Actividades> getActividades() throws SQLException {
 			ArrayList<Actividades> actividades = new ArrayList<>();
 			Conector conector = new Conector();

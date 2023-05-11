@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import ModeloDTO.Clientes;
 
 public class AdministradorClientesBBDD {
+	//Modifica las actividades ya creadas
 	public void modificarClientes(String Nombre, String Apellidos, String Telefono,String Direccion,String Localidad,String Dni) throws ClassNotFoundException {
 
 		try {
@@ -28,10 +29,9 @@ public class AdministradorClientesBBDD {
 		}
 
 	}
-	//Modifica los clientes
 
 	
-	//Da de baja a los Clientes y las actividades que haya sido registrado.
+	//Da de baja a los Clientes y las actividades que hayan sido registradas.
 	public void bajaUsuario(String Dni) throws ClassNotFoundException {
 		String sentencia="DELETE FROM inscripciones WHERE Dni_cliente=?";
 		try {
@@ -53,7 +53,7 @@ public class AdministradorClientesBBDD {
 	}
 	
 	
-	//Inserta usuarios
+	//Inserta usuarios nuevos en la BBDD
 	public void InsertarClientes(String Dni, String Nombre,String apellido, String telefono,String Direccion, String Localidad) throws ClassNotFoundException{
 		try {
 			Conector conector = new Conector();

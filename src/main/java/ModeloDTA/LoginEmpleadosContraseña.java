@@ -6,22 +6,8 @@ import java.sql.ResultSet;
 import ModeloDTO.Empleado;
 
 public class LoginEmpleadosContraseña {
-
-	// Login empleados
-
-	/*
-	 * public Boolean LoginEmpleados(String Dni,String Password) throws
-	 * ClassNotFoundException { boolean encontrado = false; try { Conector conector
-	 * = new Conector(); conector.conectar();
-	 * 
-	 * PreparedStatement pSt = conector.getCon().
-	 * prepareStatement("Select * FROM empleados WHERE Dni=? and Password=?");
-	 * pSt.setString(1, Dni); pSt.setString(2, Password); pSt.execute(); } catch
-	 * (SQLException e) {
-	 * 
-	 * e.printStackTrace(); } return encontrado; } }
-	 */
-
+	
+	//Login de empleados, sirve para entrar a la aplicacion a los Adminisrtadores.
 	public Empleado LoginEmpleados(String Dni, String Password) throws ClassNotFoundException {
 
 		Empleado empleado = new Empleado();

@@ -74,7 +74,7 @@ public class AdministradoresBBDD {
 
 	}
 	
-	
+	//Visualiza los empleados en pantalla
 	public ArrayList<Empleado> getEmpleados() throws SQLException {
 		ArrayList<Empleado> empleados = new ArrayList<>();
 		Conector conector = new Conector();
@@ -100,9 +100,5 @@ public class AdministradoresBBDD {
 		return empleados;
 
 	}
-	
-	
-	
-	
 	
 }

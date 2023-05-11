@@ -31,7 +31,7 @@ public class AdministradorHabitacionesBBDD {
 		return habitaciones;
 
 	}
-	
+	//Elimina las habitaciones usando el Id de la habitacion.
 	public void EliminarHabitacion(String Id_Habitacion) throws ClassNotFoundException {
 		try {
 			Conector conector = new Conector();
@@ -45,7 +45,7 @@ public class AdministradorHabitacionesBBDD {
 			e.printStackTrace();
 		}
 	}
-	//Modificar habitaciones
+	//Modificar las habitaciones ya creadas
 	public void modificarHabitaciones(String idhabitaciones, double precio,String descripcion,String tipohabitacion) throws ClassNotFoundException {
 
 		try {
@@ -64,6 +64,5 @@ public class AdministradorHabitacionesBBDD {
 		}
 
 	}
-	
 
 }

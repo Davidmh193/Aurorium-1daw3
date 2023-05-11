@@ -11,7 +11,7 @@ import ModeloDTO.Reservas;
 
 public class ReservasBBDD {
 	
-	
+	//inserva nuevas resrvas de los Clientes
 	public void ReservasUsuarios(Date FechaEntrada,Date FechaSalida, String DniReserva,String Habitaciones) throws ClassNotFoundException{
 		try {
 			Conector conector = new Conector();
@@ -33,7 +33,7 @@ public class ReservasBBDD {
 
 	
 	
-	
+	//Muestra las reservas en el panel de administracion.
 	public ArrayList<Reservas> getReservashabitaciones() throws SQLException {
 		ArrayList<Reservas> reservashabitaciones = new ArrayList<>();
 		Conector conector = new Conector();
