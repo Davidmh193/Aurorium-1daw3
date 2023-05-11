@@ -5,21 +5,21 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-
 import ModeloDTO.Empleado;
 
 public class AdministradoresBBDD {
-	
-	
-	//Modifica los datos del Empleados.
-	
-	public void modificarEmpleados(String Dni, String Nombre,String apellido, String telefono,String Direccion, String Localidad,String Rol, String Password) throws ClassNotFoundException {
+
+	// Modifica los datos del Empleados.
+
+	public void modificarEmpleados(String Dni, String Nombre, String apellido, String telefono, String Direccion,
+			String Localidad, String Rol, String Password) throws ClassNotFoundException {
 
 		try {
 			Conector conector = new Conector();
 			conector.conectar();
 
-			PreparedStatement pSt = conector.getCon().prepareStatement("UPDATE empleados SET Nombre=? , Apellido=?, Telefono=?,Direccion=?,Localidad=?,Rol=?,Password=?  WHERE Dni = ?");
+			PreparedStatement pSt = conector.getCon().prepareStatement(
+					"UPDATE empleados SET Nombre=? , Apellido=?, Telefono=?,Direccion=?,Localidad=?,Rol=?,Password=?  WHERE Dni = ?");
 			pSt.setString(1, Nombre);
 			pSt.setString(2, apellido);
 			pSt.setString(3, telefono);
@@ -35,8 +35,8 @@ public class AdministradoresBBDD {
 		}
 
 	}
-	
-	//Da de baja a los Empleados.
+
+	// Da de baja a los Empleados.
 	public void bajaEmpleados(String Dni) throws ClassNotFoundException {
 		try {
 			Conector conector = new Conector();
@@ -50,14 +50,16 @@ public class AdministradoresBBDD {
 			e.printStackTrace();
 		}
 	}
-	
-	//Inserta usuarios en la BBDD
-	public void InsertarEmpleados(String Dni, String Nombre,String apellido, String telefono,String Direccion, String Localidad,String Rol, String Password) throws ClassNotFoundException{
+
+	// Inserta usuarios en la BBDD
+	public void InsertarEmpleados(String Dni, String Nombre, String apellido, String telefono, String Direccion,
+			String Localidad, String Rol, String Password) throws ClassNotFoundException {
 		try {
 			Conector conector = new Conector();
 			conector.conectar();
 
-			PreparedStatement pSt = conector.getCon().prepareStatement("INSERT INTO empleados (Dni, Nombre, Apellido ,Telefono,Direccion ,Localidad,Rol,Password) Values (?,?,?,?,?,?,?,?)");
+			PreparedStatement pSt = conector.getCon().prepareStatement(
+					"INSERT INTO empleados (Dni, Nombre, Apellido ,Telefono,Direccion ,Localidad,Rol,Password) Values (?,?,?,?,?,?,?,?)");
 			pSt.setString(1, Dni);
 			pSt.setString(2, Nombre);
 			pSt.setString(3, apellido);
@@ -73,8 +75,8 @@ public class AdministradoresBBDD {
 		}
 
 	}
-	
-	//Visualiza los empleados en pantalla
+
+	// Visualiza los empleados en pantalla
 	public ArrayList<Empleado> getEmpleados() throws SQLException {
 		ArrayList<Empleado> empleados = new ArrayList<>();
 		Conector conector = new Conector();
@@ -84,7 +86,7 @@ public class AdministradoresBBDD {
 		ResultSet resultado = pSt.executeQuery();
 		while (resultado.next()) {
 			Empleado usuario = new Empleado();
-			
+
 			usuario.setDni(resultado.getString("Dni"));
 			usuario.setNombre(resultado.getString("Nombre"));
 			usuario.setApellido(resultado.getString("Apellidos"));
@@ -100,5 +102,5 @@ public class AdministradoresBBDD {
 		return empleados;
 
 	}
-	
+
 }

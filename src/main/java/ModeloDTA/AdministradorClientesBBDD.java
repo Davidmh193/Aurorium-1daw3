@@ -8,14 +8,16 @@ import java.util.ArrayList;
 import ModeloDTO.Clientes;
 
 public class AdministradorClientesBBDD {
-	//Modifica las actividades ya creadas
-	public void modificarClientes(String Nombre, String Apellidos, String Telefono,String Direccion,String Localidad,String Dni) throws ClassNotFoundException {
+	// Modifica las actividades ya creadas
+	public void modificarClientes(String Nombre, String Apellidos, String Telefono, String Direccion, String Localidad,
+			String Dni) throws ClassNotFoundException {
 
 		try {
 			Conector conector = new Conector();
 			conector.conectar();
 
-			PreparedStatement pSt = conector.getCon().prepareStatement("UPDATE clientes SET Nombre=? , Apellidos=?, Telefono=?,Direccion=?,Localidad=?  WHERE Dni = ?");
+			PreparedStatement pSt = conector.getCon().prepareStatement(
+					"UPDATE clientes SET Nombre=? , Apellidos=?, Telefono=?,Direccion=?,Localidad=?  WHERE Dni = ?");
 			pSt.setString(1, Nombre);
 			pSt.setString(2, Apellidos);
 			pSt.setString(3, Telefono);
@@ -30,10 +32,9 @@ public class AdministradorClientesBBDD {
 
 	}
 
-	
-	//Da de baja a los Clientes y las actividades que hayan sido registradas.
+	// Da de baja a los Clientes y las actividades que hayan sido registradas.
 	public void bajaUsuario(String Dni) throws ClassNotFoundException {
-		String sentencia="DELETE FROM inscripciones WHERE Dni_cliente=?";
+		String sentencia = "DELETE FROM inscripciones WHERE Dni_cliente=?";
 		try {
 			Conector conector = new Conector();
 			conector.conectar();
@@ -41,7 +42,7 @@ public class AdministradorClientesBBDD {
 			PreparedStatement pSt = conector.getCon().prepareStatement(sentencia);
 			pSt.setString(1, Dni);
 			pSt.execute();
-			sentencia="DELETE FROM clientes WHERE Dni=?";
+			sentencia = "DELETE FROM clientes WHERE Dni=?";
 			pSt = conector.getCon().prepareStatement(sentencia);
 			pSt.setString(1, Dni);
 			pSt.execute();
@@ -51,15 +52,16 @@ public class AdministradorClientesBBDD {
 		}
 
 	}
-	
-	
-	//Inserta usuarios nuevos en la BBDD
-	public void InsertarClientes(String Dni, String Nombre,String apellido, String telefono,String Direccion, String Localidad) throws ClassNotFoundException{
+
+	// Inserta usuarios nuevos en la BBDD
+	public void InsertarClientes(String Dni, String Nombre, String apellido, String telefono, String Direccion,
+			String Localidad) throws ClassNotFoundException {
 		try {
 			Conector conector = new Conector();
 			conector.conectar();
 
-			PreparedStatement pSt = conector.getCon().prepareStatement("INSERT INTO clientes (Dni, Nombre, Apellido ,Telefono,Direccion ,Localidad) Values (?,?,?,?,?,?)");
+			PreparedStatement pSt = conector.getCon().prepareStatement(
+					"INSERT INTO clientes (Dni, Nombre, Apellido ,Telefono,Direccion ,Localidad) Values (?,?,?,?,?,?)");
 			pSt.setString(1, Dni);
 			pSt.setString(1, Nombre);
 			pSt.setString(2, apellido);
@@ -73,8 +75,7 @@ public class AdministradorClientesBBDD {
 		}
 
 	}
-	
-	
+
 	// Visualiza los clientes
 	public ArrayList<Clientes> getClientes() throws SQLException {
 		ArrayList<Clientes> clientes = new ArrayList<>();
@@ -85,7 +86,7 @@ public class AdministradorClientesBBDD {
 		ResultSet resultado = pSt.executeQuery();
 		while (resultado.next()) {
 			Clientes usuario = new Clientes();
-			
+
 			usuario.setDni(resultado.getString("Dni"));
 			usuario.setNombre(resultado.getString("Nombre"));
 			usuario.setApellidos(resultado.getString("Apellidos"));
@@ -99,8 +100,5 @@ public class AdministradorClientesBBDD {
 		return clientes;
 
 	}
-	
-	
-	
 
 }

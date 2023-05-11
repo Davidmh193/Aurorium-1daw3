@@ -14,7 +14,7 @@ public class Conector {
 
 	public void conectar() {
 		try {
-			
+
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			this.con = DriverManager.getConnection("jdbc:mysql://" + HOST + "/" + BBDD, USERNAME, PASSWORD);
 		} catch (ClassNotFoundException e) {
@@ -41,5 +41,4 @@ public class Conector {
 		this.con = con;
 	}
 
-	}
-
+}

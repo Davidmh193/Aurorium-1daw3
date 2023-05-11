@@ -4,15 +4,17 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class ModificarEmpleadosBBDD {
-	
-	//Modifica los datos de los empleados
-	public void modificarEmpleados(String Dni,String Nombre, String Apellido, String telefono,String direccion,String localidad,String rol, String password) throws ClassNotFoundException {
+
+	// Modifica los datos de los empleados
+	public void modificarEmpleados(String Dni, String Nombre, String Apellido, String telefono, String direccion,
+			String localidad, String rol, String password) throws ClassNotFoundException {
 
 		try {
 			Conector conector = new Conector();
 			conector.conectar();
 
-			PreparedStatement pSt = conector.getCon().prepareStatement("UPDATE empleados SET Nombre=? , Apellidos=?, Telefono=?,Direccion=?,Localidad=?,Rol=?,Password=?  WHERE Dni = ?");
+			PreparedStatement pSt = conector.getCon().prepareStatement(
+					"UPDATE empleados SET Nombre=? , Apellidos=?, Telefono=?,Direccion=?,Localidad=?,Rol=?,Password=?  WHERE Dni = ?");
 			pSt.setString(1, Nombre);
 			pSt.setString(2, Apellido);
 			pSt.setString(3, telefono);
@@ -28,15 +30,17 @@ public class ModificarEmpleadosBBDD {
 		}
 
 	}
-	
-	//Inserta nuevo empleados
-	
-	public void Insertarempleados(String Dni, String Nombre,String apellido, String telefono,String Direccion, String Localidad,String Rol,String Password) throws ClassNotFoundException{
+
+	// Inserta nuevo empleados
+
+	public void Insertarempleados(String Dni, String Nombre, String apellido, String telefono, String Direccion,
+			String Localidad, String Rol, String Password) throws ClassNotFoundException {
 		try {
 			Conector conector = new Conector();
 			conector.conectar();
 
-			PreparedStatement pSt = conector.getCon().prepareStatement("INSERT INTO empleados (Dni, Nombre, Apellidos ,Telefono,Direccion ,Localidad,Rol,Password) Values (?,?,?,?,?,?,?,?)");
+			PreparedStatement pSt = conector.getCon().prepareStatement(
+					"INSERT INTO empleados (Dni, Nombre, Apellidos ,Telefono,Direccion ,Localidad,Rol,Password) Values (?,?,?,?,?,?,?,?)");
 			pSt.setString(1, Dni);
 			pSt.setString(1, Nombre);
 			pSt.setString(2, apellido);
@@ -52,5 +56,5 @@ public class ModificarEmpleadosBBDD {
 		}
 
 	}
-	
+
 }

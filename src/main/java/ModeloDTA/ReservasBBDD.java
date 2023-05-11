@@ -10,18 +10,20 @@ import ModeloDTO.IncripcionesActividad;
 import ModeloDTO.Reservas;
 
 public class ReservasBBDD {
-	
-	//inserva nuevas resrvas de los Clientes
-	public void ReservasUsuarios(Date FechaEntrada,Date FechaSalida, String DniReserva,String Habitaciones) throws ClassNotFoundException{
+
+	// inserva nuevas resrvas de los Clientes
+	public void ReservasUsuarios(Date FechaEntrada, Date FechaSalida, String DniReserva, String Habitaciones)
+			throws ClassNotFoundException {
 		try {
 			Conector conector = new Conector();
 			conector.conectar();
 
-			PreparedStatement pSt = conector.getCon().prepareStatement("INSERT INTO reservas (Id_Habitacion, Dni_Cliente, Fecha_Entrada,Fecha_Salida) Values (?,?,?,?)");
+			PreparedStatement pSt = conector.getCon().prepareStatement(
+					"INSERT INTO reservas (Id_Habitacion, Dni_Cliente, Fecha_Entrada,Fecha_Salida) Values (?,?,?,?)");
 			pSt.setString(2, DniReserva);
 			pSt.setString(1, Habitaciones);
-			pSt.setDate(3, new java.sql.Date( FechaSalida.getTime()));
-			pSt.setDate(4, new java.sql.Date( FechaEntrada.getTime()));
+			pSt.setDate(3, new java.sql.Date(FechaSalida.getTime()));
+			pSt.setDate(4, new java.sql.Date(FechaEntrada.getTime()));
 			pSt.execute();
 		} catch (SQLException e) {
 
@@ -29,11 +31,8 @@ public class ReservasBBDD {
 		}
 
 	}
-	
 
-	
-	
-	//Muestra las reservas en el panel de administracion.
+	// Muestra las reservas en el panel de administracion.
 	public ArrayList<Reservas> getReservashabitaciones() throws SQLException {
 		ArrayList<Reservas> reservashabitaciones = new ArrayList<>();
 		Conector conector = new Conector();
@@ -43,12 +42,12 @@ public class ReservasBBDD {
 		ResultSet resultado = pSt.executeQuery();
 		while (resultado.next()) {
 			Reservas usuario = new Reservas();
-			
+
 			usuario.setIdHabitacion(resultado.getString("Id_Habitacion"));
 			usuario.setDniClientes(resultado.getString("Dni_Cliente"));
 			usuario.setFecha_inicio(resultado.getDate("Fecha_Entrada"));
 			usuario.setFecha_salida(resultado.getDate("Fecha_Salida"));
-			
+
 			reservashabitaciones.add(usuario);
 		}
 		pSt.close();
@@ -56,7 +55,7 @@ public class ReservasBBDD {
 		return reservashabitaciones;
 
 	}
-	
+
 	public ArrayList<IncripcionesActividad> getActividadesReserva() throws SQLException {
 		ArrayList<IncripcionesActividad> actividadescreadas1 = new ArrayList<>();
 		Conector conector = new Conector();
@@ -66,7 +65,7 @@ public class ReservasBBDD {
 		ResultSet resultado = pSt.executeQuery();
 		while (resultado.next()) {
 			IncripcionesActividad usuario = new IncripcionesActividad();
-			
+
 			usuario.setDni_cliente(resultado.getString("Dni_Cliente"));
 			usuario.setCodigo_actividad(resultado.getString("Codigo_Actividad"));
 			usuario.setActividad_pagada(resultado.getBoolean("Actividad_Pagada"));
@@ -78,6 +77,7 @@ public class ReservasBBDD {
 		return actividadescreadas1;
 
 	}
+
 	public void EliminarReserva(String Reserva) throws ClassNotFoundException {
 		try {
 			Conector conector = new Conector();
@@ -91,17 +91,19 @@ public class ReservasBBDD {
 			e.printStackTrace();
 		}
 	}
-	
-	public void modificarHabitaciones(String habitacionesId, Date entrafecha,Date Salidafecha,String dni) throws ClassNotFoundException {
+
+	public void modificarHabitaciones(String habitacionesId, Date entrafecha, Date Salidafecha, String dni)
+			throws ClassNotFoundException {
 
 		try {
 			Conector conector = new Conector();
 			conector.conectar();
 
-			PreparedStatement pSt = conector.getCon().prepareStatement("UPDATE reservas SET Id_Habitacion=? , Fecha_Entrada=?, Fecha_Salida=? WHERE Dni_Cliente = ?");
+			PreparedStatement pSt = conector.getCon().prepareStatement(
+					"UPDATE reservas SET Id_Habitacion=? , Fecha_Entrada=?, Fecha_Salida=? WHERE Dni_Cliente = ?");
 			pSt.setString(1, habitacionesId);
-			pSt.setDate(2, new java.sql.Date( entrafecha.getTime()));
-			pSt.setDate(3, new java.sql.Date( Salidafecha.getTime()));
+			pSt.setDate(2, new java.sql.Date(entrafecha.getTime()));
+			pSt.setDate(3, new java.sql.Date(Salidafecha.getTime()));
 			pSt.setString(4, dni);
 			pSt.execute();
 		} catch (SQLException e) {

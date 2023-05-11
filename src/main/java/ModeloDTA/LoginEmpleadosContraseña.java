@@ -6,8 +6,8 @@ import java.sql.ResultSet;
 import ModeloDTO.Empleado;
 
 public class LoginEmpleadosContraseña {
-	
-	//Login de empleados, sirve para entrar a la aplicacion a los Adminisrtadores.
+
+	// Login de empleados, sirve para entrar a la aplicacion a los Adminisrtadores.
 	public Empleado LoginEmpleados(String Dni, String Password) throws ClassNotFoundException {
 
 		Empleado empleado = new Empleado();

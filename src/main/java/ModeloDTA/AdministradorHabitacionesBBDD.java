@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import ModeloDTO.Habitaciones;
 
 public class AdministradorHabitacionesBBDD {
-	
-	//muestra las habitaciones
+
+	// muestra las habitaciones
 	public ArrayList<Habitaciones> gethabitaciones() throws SQLException {
 		ArrayList<Habitaciones> habitaciones = new ArrayList<>();
 		Conector conector = new Conector();
@@ -19,7 +19,7 @@ public class AdministradorHabitacionesBBDD {
 		ResultSet resultado = pSt.executeQuery();
 		while (resultado.next()) {
 			Habitaciones usuario = new Habitaciones();
-			
+
 			usuario.setIdhabitaciones(resultado.getString("Id_Habitacion"));
 			usuario.setPrecio(resultado.getDouble("Precio"));
 			usuario.setDescripcion(resultado.getString("Descripcion"));
@@ -31,13 +31,15 @@ public class AdministradorHabitacionesBBDD {
 		return habitaciones;
 
 	}
-	//Elimina las habitaciones usando el Id de la habitacion.
+
+	// Elimina las habitaciones usando el Id de la habitacion.
 	public void EliminarHabitacion(String Id_Habitacion) throws ClassNotFoundException {
 		try {
 			Conector conector = new Conector();
 			conector.conectar();
 
-			PreparedStatement pSt = conector.getCon().prepareStatement("DELETE FROM habitaciones WHERE Id_Habitacion=?");
+			PreparedStatement pSt = conector.getCon()
+					.prepareStatement("DELETE FROM habitaciones WHERE Id_Habitacion=?");
 			pSt.setString(1, Id_Habitacion);
 			pSt.execute();
 		} catch (SQLException e) {
@@ -45,14 +47,17 @@ public class AdministradorHabitacionesBBDD {
 			e.printStackTrace();
 		}
 	}
-	//Modificar las habitaciones ya creadas
-	public void modificarHabitaciones(String idhabitaciones, double precio,String descripcion,String tipohabitacion) throws ClassNotFoundException {
+
+	// Modificar las habitaciones ya creadas
+	public void modificarHabitaciones(String idhabitaciones, double precio, String descripcion, String tipohabitacion)
+			throws ClassNotFoundException {
 
 		try {
 			Conector conector = new Conector();
 			conector.conectar();
 
-			PreparedStatement pSt = conector.getCon().prepareStatement("UPDATE habitaciones SET Precio=? , Descripcion=?,Tipo_Habitacion=? WHERE Id_Habitacion = ?");
+			PreparedStatement pSt = conector.getCon().prepareStatement(
+					"UPDATE habitaciones SET Precio=? , Descripcion=?,Tipo_Habitacion=? WHERE Id_Habitacion = ?");
 			pSt.setDouble(1, precio);
 			pSt.setString(2, descripcion);
 			pSt.setString(3, tipohabitacion);
