@@ -51,30 +51,31 @@
         <p class="descripcion"> Explora los diferentes servicios complementarios que ofrecemos para una estancia mas
           agradable.
         </p>
-        <div class="botoncitos"></div>
-
-        <input type="date" class="my-date-picker" style="margin-bottom: 2%;">
-
+          <form method="POST" action="InsertarActividades">
+        <div class="botoncitos">
         
-        <input type="text" class="my-text-input" placeholder="DNI" style="margin-bottom: 2%;">
+
+        <input type="date" name="FechaEntrada" class="my-date-picker" style="margin-bottom: 2%;">
+        
+        <input type="text" name="Dni"class="my-text-input" placeholder="DNI" style="margin-bottom: 2%;">
         <div class="dropdown" style="display:inline-block; margin-bottom: 2%;">
-          <select>
-            <option value="option1">Pista de Tenis</option>
-            <option value="option2">Pista de Padel</option>
-            <option value="option3">Pista de golf</option>
-            <option value="option4">Spa</option>
-            <option value="option5">Salon de juegos</option>
-            <option value="option6">Piscina interior</option>
-            <option value="option7">Piscina exterior</option>
-            <option value="option8">Tratamiento de belleza</option>
-            <option value="option4">Gimnasio</option>
+          <select name="Desplegable">
+            <option value="Pista de Tenis">Pista de Tenis</option>
+            <option value="Pista de Padel">Pista de Padel</option>
+            <option value="Pista de golf">Pista de golf</option>
+            <option value="Spa">Spa</option>
+            <option value="Salon de juegos">Salon de juegos</option>
+            <option value="Piscina interior">Piscina interior</option>
+            <option value="Piscina exterior">Piscina exterior</option>
+            <option value="Tratamiento de belleza">Tratamiento de belleza</option>
+            <option value="Gimnasio">Gimnasio</option>
 
           </select>
         </div>
 
-        <button class="my-date-picker" style="margin-bottom: 0.2%;">Inscribirse</button>
-
-
+        <button type="submit" class="my-date-picker" style="margin-bottom: 0.2%;">Inscribirse</button>
+	</form>
+</div>
       </div>
     </div>
 

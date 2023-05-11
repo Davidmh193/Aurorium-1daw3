@@ -54,20 +54,20 @@ public class AdministradorClientesBBDD {
 	}
 
 	// Inserta usuarios nuevos en la BBDD
-	public void InsertarClientes(String Dni, String Nombre, String apellido, String telefono, String Direccion,
-			String Localidad) throws ClassNotFoundException {
+	public void InsertarClientes(String Dni, String Nombre, String Apellidos, String telefono, String direccion,
+			String localidad) throws ClassNotFoundException {
 		try {
 			Conector conector = new Conector();
 			conector.conectar();
 
 			PreparedStatement pSt = conector.getCon().prepareStatement(
-					"INSERT INTO clientes (Dni, Nombre, Apellido ,Telefono,Direccion ,Localidad) Values (?,?,?,?,?,?)");
+					"INSERT INTO clientes (Dni, Nombre, Apellidos ,Telefono,Direccion ,Localidad) Values (?,?,?,?,?,?)");
 			pSt.setString(1, Dni);
-			pSt.setString(1, Nombre);
-			pSt.setString(2, apellido);
-			pSt.setString(3, telefono);
-			pSt.setString(4, Direccion);
-			pSt.setString(5, Localidad);
+			pSt.setString(2, Nombre);
+			pSt.setString(3, Apellidos);
+			pSt.setString(4, telefono);
+			pSt.setString(5, direccion);
+			pSt.setString(6, localidad);
 			pSt.execute();
 		} catch (SQLException e) {
 

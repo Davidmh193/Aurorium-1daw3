@@ -3,6 +3,7 @@ package servlets;
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,7 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import ModeloDTA.AdministradorActividadesBBDD;
+import ModeloDTA.InscripcionesBBDD;
 
 /**
  * Servlet implementation class Insertaractividades
@@ -31,6 +32,37 @@ public class Insertaractividades extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		String FechaEntrada = request.getParameter("FechaEntrada");
+		String Dni = request.getParameter("Dni");
+		
+		String Codigo = request.getParameter("Desplegable");
+		InscripcionesBBDD Reservas = new InscripcionesBBDD();
+		Date FechaEntra2 = null;
+		
+        try {
+        	FechaEntra2 = new SimpleDateFormat("yyyy-MM-dd").parse(FechaEntrada);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        
+        try {
+			Reservas.InsertarInscripciones(FechaEntra2, Codigo,Dni);
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		request.getRequestDispatcher("InsertarCliente.jsp").forward(request,response);
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		/*Inserta Actividades
 		String nombre = request.getParameter("nombre");
 		String dni = request.getParameter("dni");

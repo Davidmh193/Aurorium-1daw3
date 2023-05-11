@@ -54,27 +54,27 @@
   
         <div class = "contact-body">
           <div class = "contact-form">
-            <form>
+            <form method="POST" action="InsertaCliente">
               <div style="display: inline-block;" inputs>
                 <input  type = "text" class = "form-control" placeholder="Dni"name="dnicliente">
                 <input  type = "text" class = "form-control" placeholder="Nombre"name="Nombre">
-                <input  type = "email" class = "form-control" placeholder="Apellidos"name="Apellido">
+                <input  type = "text" class = "form-control" placeholder="Apellidos"name="Apellido">
                 <input  type = "text" class = "form-control" placeholder="Telefono"name="telefono">
-                <input  type = "email" class = "form-control" placeholder="Direccion"name="email">
-                <input  type = "text" class = "form-control" placeholder="Localidad"name="text">
+                <input  type = "text" class = "form-control" placeholder="Direccion"name="direccion">
+                <input  type = "text" class = "form-control" placeholder="Localidad"name="localidad">
               </div>
               <!--Botn de enviar-->
-              <button style=" margin-top:2%" class="learn-more">
+              <button style=" margin-top:2%" class="learn-more"  type="submit">
                 <span class="circle" aria-hidden="true">
                 <span class="icon arrow"></span>
                 </span>
                 <span class="button-text">Enviar</span>
-              </button>
+              </button >
             </form>
             
           </div>
           
-          <a href="">
+          <a href="GraciasCompra.jsp">
           <button class="cta">
             <span class="hover-underline-animation">Si ya estas registrado clica aqui</span>
             <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
