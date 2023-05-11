@@ -5,7 +5,6 @@ import java.util.Date;
 public class Actividades {
 	private String Nombre_actividad;
 	private String Codigo_actividad;
-	private Date Fecha_actividad;
 	private int max_participantes;
 	private double Precio_Actividad;
 	public String getNombre_actividad() {
@@ -19,12 +18,6 @@ public class Actividades {
 	}
 	public void setCodigo_actividad(String codigo_actividad) {
 		Codigo_actividad = codigo_actividad;
-	}
-	public Date getFecha_actividad() {
-		return Fecha_actividad;
-	}
-	public void setFecha_actividad(Date fecha_actividad) {
-		Fecha_actividad = fecha_actividad;
 	}
 	public int getMax_participantes() {
 		return max_participantes;

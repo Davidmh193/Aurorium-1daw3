@@ -5,6 +5,7 @@ public class Habitaciones {
 	private double precio;
 	private String descripcion;
 	private String tipohabitacion;
+	
 	public String getIdhabitaciones() {
 		return idhabitaciones;
 	}

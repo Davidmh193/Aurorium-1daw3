@@ -9,7 +9,7 @@ import ModeloDTO.Actividades;
 
 public class AdministradorActividadesBBDD {
 	
-	public void modificarActiviades(String Nombre_actividad, String Codigo_actividad, String max_participantes,String Precio_Actividad) throws ClassNotFoundException {
+	public void modificarActiviades(String Nombre_actividad, int participantes, double precio,String Codigo_actividad) throws ClassNotFoundException {
 
 		try {
 			Conector conector = new Conector();
@@ -17,8 +17,8 @@ public class AdministradorActividadesBBDD {
 
 			PreparedStatement pSt = conector.getCon().prepareStatement("UPDATE actividades SET Nombre_Actividad=? , Max_Participantes=?,Precio_Actividad=? WHERE Codigo_Actividad = ?");
 			pSt.setString(1, Nombre_actividad);
-			pSt.setString(2, max_participantes);
-			pSt.setString(3, Precio_Actividad);
+			pSt.setInt(2, participantes);
+			pSt.setDouble(3, precio);
 			pSt.setString(4, Codigo_actividad);
 			pSt.execute();
 		} catch (SQLException e) {

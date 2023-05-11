@@ -179,7 +179,7 @@
 										</button>
   											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
    											
-   											<form method="POST" action="ModificarClientes" class="form">
+   											<form method="POST" action="ModificarAdministracion" class="form">
     											<label for="idhabitacion" class="label">Dni</label>
     											<input type="text" id="dnicliente" name="dnicliente" required="" class="input">
     											
@@ -285,7 +285,7 @@
 										Modificar
 										</button>
   											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-   											<form method="POST" action="Modificar" class="form">
+   											<form method="POST" action="ModificarActiviades" class="form">
     											<label for="idhabitacion" class="label">Nombre Actividad</label>
     											<input type="text" id="username" name="NombreActividad" required="" class="input">
     											
@@ -305,9 +305,6 @@
 											
 											</td>
 
-											<td><a
-												href="/Aurorium/Modificar?q=Cliente&dni=${actividadescr.codigo_actividad}"><i
-													class="fa-regular fa-pen-to-square fa-lg"></i></a></td>
 
 											<td><a
 												href="/Aurorium/EliminarDatos?id=${actividadescr.codigo_actividad}&tipo=actividad"><i
@@ -393,8 +390,8 @@
 										Modificar
 										</button>
   											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-   											<form method="POST" action="Modificar" class="form">
-    											<label for="idhabitacion" class="label">Username</label>
+   											<form method="POST" action="ModificarHabitaciones" class="form">
+    											<label for="idhabitacion" class="label">Id habitacion</label>
     											<input type="text" id="username" name="idhabitacion" required="" class="input">
     											
 											    <label for="precio" class="label">Precio</label>
@@ -403,7 +400,7 @@
 											    <label for="password" class="label">Descripcion</label>
 											    <input type="descripcion" id="password" name="descripcion" required="" class="input">
 											    
-											     <label for="tipohabitacion" class="label">Username</label>
+											     <label for="tipohabitacion" class="label">Tipo</label>
 											    <input type="text" id="username" name="tipohabitacion" required="" class="input">
 											    
 											    <button type="submit" class="submit">Modificar</button>
@@ -414,10 +411,6 @@
 											
 											</td>
 													
-
-											<td><a
-												href="/Aurorium/Modificar?q=Cliente&dni=${habitaciones2.idhabitaciones}"><i
-													class="fa-regular fa-pen-to-square fa-lg"></i></a></td>
 
 
 											<td><a

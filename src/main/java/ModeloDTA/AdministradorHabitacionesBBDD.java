@@ -45,8 +45,25 @@ public class AdministradorHabitacionesBBDD {
 			e.printStackTrace();
 		}
 	}
-	//Insertar habitaciones
-	
+	//Modificar habitaciones
+	public void modificarHabitaciones(String idhabitaciones, double precio,String descripcion,String tipohabitacion) throws ClassNotFoundException {
+
+		try {
+			Conector conector = new Conector();
+			conector.conectar();
+
+			PreparedStatement pSt = conector.getCon().prepareStatement("UPDATE habitaciones SET Precio=? , Descripcion=?,Tipo_Habitacion=? WHERE Id_Habitacion = ?");
+			pSt.setDouble(1, precio);
+			pSt.setString(2, descripcion);
+			pSt.setString(3, tipohabitacion);
+			pSt.setString(4, idhabitaciones);
+			pSt.execute();
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+		}
+
+	}
 	
 
 }

@@ -8,19 +8,19 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import ModeloDTA.AdministradorClientesBBDD;
+import ModeloDTA.AdministradorHabitacionesBBDD;
 
 /**
- * Servlet implementation class ModificarClientes
+ * Servlet implementation class ModificarHabitaciones
  */
-@WebServlet("/ModificarClientes")
-public class ModificarClientes extends HttpServlet {
+@WebServlet("/ModificarHabitaciones")
+public class ModificarHabitaciones extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ModificarClientes() {
+    public ModificarHabitaciones() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -29,36 +29,35 @@ public class ModificarClientes extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-		
 		request.getRequestDispatcher("/Administracion").forward(request,response);
-	
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		AdministradorClientesBBDD clientesmod = new AdministradorClientesBBDD();
+AdministradorHabitacionesBBDD habitaciones = new AdministradorHabitacionesBBDD();
 		
-		String dni= request.getParameter("dnicliente");
-		String nombre=  request.getParameter("nombrecliente");
-		String apellidos=  request.getParameter("apellidocliente");
-		String telefono=  request.getParameter("telefonocliente");
-		String direccion=  request.getParameter("Direccioncliente");
-		String localidad=  request.getParameter("Localidadcliente");
+		
+		String id= request.getParameter("idhabitacion");
+		double precio = Double.parseDouble(request.getParameter("precio"));
+		String descripcion=  request.getParameter("descripcion");
+		String tipohabitacion=  request.getParameter("tipohabitacion");
+		
 		
 		
 		try {
-			clientesmod.modificarClientes(nombre, apellidos, telefono, direccion, localidad,dni);
+			habitaciones.modificarHabitaciones(id, precio, descripcion, tipohabitacion);
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
+	
+		
+
 		
 		request.getRequestDispatcher("/Administracion").forward(request,response);
-		
 		
 	}
 
