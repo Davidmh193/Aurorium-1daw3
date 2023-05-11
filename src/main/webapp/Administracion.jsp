@@ -178,24 +178,25 @@
 										Modificar
 										</button>
   											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+   											
    											<form method="POST" action="ModificarClientes" class="form">
     											<label for="idhabitacion" class="label">Dni</label>
-    											<input type="text" id="username" name="dnicliente" required="" class="input">
+    											<input type="text" id="dnicliente" name="dnicliente" required="" class="input">
     											
 											    <label for="precio" class="label">Nombre</label>
-											  	<input type="text" id="email" name="nombrecliente" required="" class="input">
+											  	<input type="text" id="nombrecliente" name="nombrecliente" required="" class="input">
 											  	
 											    <label for="password" class="label">Apellido</label>
-											    <input type="descripcion" id="password" name="apellidocliente" required="" class="input">
+											    <input type="descripcion" id="apellidocliente" name="apellidocliente" required="" class="input">
 											    
 											     <label for="tipohabitacion" class="label">Telefono</label>
-											    <input type="text" id="username" name="telefonocliente" required="" class="input">
+											    <input type="text" id="telefonocliente" name="telefonocliente" required="" class="input">
 											    
 											      <label for="tipohabitacion" class="label">Direccion</label>
-											    <input type="text" id="username" name="Direccioncliente" required="" class="input">
+											    <input type="text" id="Direccioncliente" name="Direccioncliente" required="" class="input">
 											    
 											      <label for="tipohabitacion" class="label">Localidad</label>
-											    <input type="text" id="username" name="Localidadcliente" required="" class="input">
+											    <input type="text" id="Localidadcliente" name="Localidadcliente" required="" class="input">
 											    <button type="submit" class="submit">Modificar</button>
   												</form >
   												</div>

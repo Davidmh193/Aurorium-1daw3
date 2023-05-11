@@ -31,7 +31,7 @@ public class ModificarClientes extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		
-		request.getRequestDispatcher("Administracion").forward(request,response);
+		request.getRequestDispatcher("/Administracion").forward(request,response);
 	
 	}
 
@@ -43,21 +43,21 @@ public class ModificarClientes extends HttpServlet {
 		
 		String dni= request.getParameter("dnicliente");
 		String nombre=  request.getParameter("nombrecliente");
-		String apellido=  request.getParameter("apellidocliente");
+		String apellidos=  request.getParameter("apellidocliente");
 		String telefono=  request.getParameter("telefonocliente");
 		String direccion=  request.getParameter("Direccioncliente");
 		String localidad=  request.getParameter("Localidadcliente");
 		
 		
 		try {
-			clientesmod.modificarClientes(dni,nombre,apellido,telefono,direccion,localidad);
+			clientesmod.modificarClientes(nombre, apellidos, telefono, direccion, localidad,dni);
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
 		
-		request.getRequestDispatcher("ModificarClientes").forward(request,response);
+		request.getRequestDispatcher("/Administracion").forward(request,response);
 		
 		
 	}

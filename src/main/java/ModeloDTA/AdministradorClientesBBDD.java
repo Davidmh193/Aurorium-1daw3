@@ -14,7 +14,7 @@ public class AdministradorClientesBBDD {
 			Conector conector = new Conector();
 			conector.conectar();
 
-			PreparedStatement pSt = conector.getCon().prepareStatement("UPDATE clientes SET Nombre=? , Apellido=?, Telefono=?,Direccion=?,Localidad=?  WHERE Dni = ?");
+			PreparedStatement pSt = conector.getCon().prepareStatement("UPDATE clientes SET Nombre=? , Apellidos=?, Telefono=?,Direccion=?,Localidad=?  WHERE Dni = ?");
 			pSt.setString(1, Nombre);
 			pSt.setString(2, Apellidos);
 			pSt.setString(3, Telefono);
