@@ -91,4 +91,23 @@ public class ReservasBBDD {
 			e.printStackTrace();
 		}
 	}
+	
+	public void modificarHabitaciones(String habitacionesId, Date entrafecha,Date Salidafecha,String dni) throws ClassNotFoundException {
+
+		try {
+			Conector conector = new Conector();
+			conector.conectar();
+
+			PreparedStatement pSt = conector.getCon().prepareStatement("UPDATE reservas SET Id_Habitacion=? , Fecha_Entrada=?, Fecha_Salida=? WHERE Dni_Cliente = ?");
+			pSt.setString(1, habitacionesId);
+			pSt.setDate(2, new java.sql.Date( entrafecha.getTime()));
+			pSt.setDate(3, new java.sql.Date( Salidafecha.getTime()));
+			pSt.setString(4, dni);
+			pSt.execute();
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+		}
+
+	}
 }

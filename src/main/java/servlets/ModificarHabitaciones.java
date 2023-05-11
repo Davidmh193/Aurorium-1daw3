@@ -53,8 +53,6 @@ AdministradorHabitacionesBBDD habitaciones = new AdministradorHabitacionesBBDD()
 			e.printStackTrace();
 		}
 		
-	
-		
 
 		
 		request.getRequestDispatcher("/Administracion").forward(request,response);

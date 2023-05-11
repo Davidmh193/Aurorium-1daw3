@@ -26,6 +26,7 @@ public class Empleados extends HttpServlet {
 	public Empleados() {
 		super();
 		// TODO Auto-generated constructor stub
+		
 	}
 
 	/**
@@ -58,6 +59,7 @@ public class Empleados extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
+		doGet(request, response);
 	}
 
 }

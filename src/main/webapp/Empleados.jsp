@@ -12,6 +12,7 @@
 <!--Links CSS-->
 <link rel="stylesheet" href="css/Index.css" />
 <link rel="stylesheet" href="css/Foter.css">
+<link rel="stylesheet" href="css/Administracion.css">
 
 
 <!--Links letras-->
@@ -155,14 +156,61 @@
 
 											<!-- actualizar y eliminar -->
 
-											<td><a
-												href="/Aurorium/Modificar?q=Cliente&dni=${empleado.dni}"><i
-													class="fa-regular fa-pen-to-square fa-lg"></i></a></td>
+													<td>
+											<div class="dropdown">
+  										<button class="continue-application" id="dropdownMenuButton" data-toggle="dropdown">
+										    <div>
+										        <div class="pencil"></div>
+										        <div class="folder">
+										            <div class="top">
+										                <svg viewBox="0 0 24 27">
+										                    <path d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z"></path>
+										                </svg>
+										            </div>
+										            <div class="paper"></div>
+										        </div>
+										    </div>
+										Modificar
+										</button>
+  											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+   											
+   											<form method="POST" action="ModificarEmpleados" class="form">
+    											<label for="idhabitacion" class="label">Dni</label>
+    											<input type="text" id="dnicliente" name="dniempleados" required="" class="input">
+    											
+											    <label for="precio" class="label">Nombre</label>
+											  	<input type="text" id="nombrecliente" name="nombreempleados" required="" class="input">
+											  	
+											    <label for="password" class="label">Apellido</label>
+											    <input type="descripcion" id="apellidocliente" name="apellidoempleados" required="" class="input">
+											    
+											     <label for="tipohabitacion" class="label">Telefono</label>
+											    <input type="text" id="telefonocliente" name="telefonoempleados" required="" class="input">
+											    
+											      <label for="tipohabitacion" class="label">Direccion</label>
+											    <input type="text" id="Direccioncliente" name="Direccionempleados" required="" class="input">
+											    
+											      <label for="tipohabitacion" class="label">Localidad</label>
+											    <input type="text" id="Localidadcliente" name="Localidadempleados" required="" class="input">
+											    
+											    	      <label for="tipohabitacion" class="label">Rol</label>
+											    <input type="text" id="Localidadcliente" name="Rol" required="" class="input">
+											    
+											    	      <label for="tipohabitacion" class="label">Password</label>
+											    <input type="text" id="Localidadcliente" name="Password" required="" class="input">
+											    
+											    <button type="submit" class="submit">Modificar</button>
+  												</form >
+  												</div>
+												</div>
+											
+											
+											</td>
 
 											<td><a
 												href="/Aurorium/Empleadosmodificaciones?id=${empleado.dni}&tipo=empleados"><i
 													class="fa-solid fa-trash-can fa-lg"></i></a></td>
-
+											
 										</tr>
 
 									</c:forEach>
@@ -186,7 +234,7 @@
 		</div>
 		<footer>
 			<div class="footer"
-				style="bottom: 0; width: 100%; position: absolute;">
+				style="bottom: 0; width: 100%;">
 				<div class="row" style="display: flex; justify-content: center;">
 					<div class="social-links">
 						<div id="twitter" class="social-btn flex-center">

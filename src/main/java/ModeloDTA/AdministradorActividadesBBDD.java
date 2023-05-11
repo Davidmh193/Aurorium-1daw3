@@ -31,11 +31,15 @@ public class AdministradorActividadesBBDD {
 	
 	
 	public void EliminarActividad(String Codigo_Actividad) throws ClassNotFoundException {
+		String sentencia="DELETE FROM inscripciones WHERE Codigo_Actividad=?";
 		try {
 			Conector conector = new Conector();
 			conector.conectar();
-
-			PreparedStatement pSt = conector.getCon().prepareStatement("DELETE FROM actividades WHERE Codigo_Actividad=?");
+			PreparedStatement pSt = conector.getCon().prepareStatement(sentencia);
+			pSt.setString(1, Codigo_Actividad);
+			pSt.execute();
+			sentencia="DELETE FROM actividades WHERE Codigo_Actividad=?";
+			pSt = conector.getCon().prepareStatement(sentencia);
 			pSt.setString(1, Codigo_Actividad);
 			pSt.execute();
 		} catch (SQLException e) {

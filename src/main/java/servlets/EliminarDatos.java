@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import ModeloDTA.AdministradorActividadesBBDD;
 import ModeloDTA.AdministradorClientesBBDD;
 import ModeloDTA.AdministradorHabitacionesBBDD;
-import ModeloDTO.Clientes;
 
 /**
  * Servlet implementation class EliminarClientes
@@ -40,8 +39,7 @@ public class EliminarDatos extends HttpServlet {
 		AdministradorActividadesBBDD adminActividades = new AdministradorActividadesBBDD();
 		AdministradorHabitacionesBBDD habitaciones= new AdministradorHabitacionesBBDD();
 		
-		AdministradorClientesBBDD modificarclientes = new AdministradorClientesBBDD();
-
+	
 		
 		try {
 			switch(tipo) {

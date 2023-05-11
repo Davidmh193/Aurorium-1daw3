@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +28,7 @@
         <div class="links" id="links">
           <div class="wrapper-links">
               <a href="Index.jsp" class="link "><i class="fa fa-home"></i></q> Home</a>
-              <a href="Activides.jsp" class="link active"> <i class="fa fa-globe"></i></q> Actividades</a>
+              <a href="Actividades.jsp" class="link active"> <i class="fa fa-globe"></i></q> Actividades</a>
               <a href="Habitaciones.jsp" class="link"><i class="fa fa-bed"></i></q> Habitaciones</a>
               <a href="Reservas.jsp" class="link"> <i class="fa fa-book"></i></q> Reservar</a>
               <a href="Contacto.jsp" class="link"><i class="fa fa-phone"></i></q> Contacto</a>
@@ -47,7 +47,7 @@
     <div class="pelicula-principal">
       <div class="contenedor">
         <h3 class="titulo">Actividades</h3>
-        <p class="descripcion"> Explora los diferentes servicios complementarios que ofrecemos para una estancia más
+        <p class="descripcion"> Explora los diferentes servicios complementarios que ofrecemos para una estancia mas
           agradable.
         </p>
         <div class="botoncitos"></div>
@@ -84,10 +84,10 @@
   <div class="primerCuadradito1">
     
     <div class="bienvenida">
-      <h2>¡Bienvenidos a Aurorium, su próximo destino vacacional!</h2>
+      <h2>¡Bienvenidos a Aurorium, su proximo destino vacacional!</h2>
       <p style="margin-bottom: 5.5%;">
         <br>
-        En nuestro hotel, ofrecemos una amplia variedad de actividades y servicios para que nuestros huéspedes disfruten de una estancia única. Tanto si eres un amante del deporte o prefieres relajarte y disfrutar de un momento de desconexión y bienestar en nuestras instalaciones tenemos todo lo que necesitas para hacer de tu estancia una experiencia inolvidable.
+        En nuestro hotel, ofrecemos una amplia variedad de actividades y servicios para que nuestros huéspedes disfruten de una estancia unica. Tanto si eres un amante del deporte o prefieres relajarte y disfrutar de un momento de desconexión y bienestar en nuestras instalaciones tenemos todo lo que necesitas para hacer de tu estancia una experiencia inolvidable.
       </p>
     </div>
 
@@ -98,7 +98,7 @@
       <img src="img/PistaTenis.jpg">
       <h4>Deportes</h4>
       <h2>Pista de tenis</h2>
-      <p>Nuestras pistas de tenis están diseñadas para satisfacer a los jugadores mas exigentes. Con una superficie de
+      <p>Nuestras pistas de tenis estan diseñadas para satisfacer a los jugadores mas exigentes. Con una superficie de
         alta calidad, las pistas ofrecen una excelente traccion y un bote de pelota uniforme para un juego fluido. <br>
         Ademas, nuestras pistas estan iluminadas para que puedas seguir jugando incluso despues de la puesta de sol.</p>
       <button style="background-color: #25263a;">Inscribirse</button>

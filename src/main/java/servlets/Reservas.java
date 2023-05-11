@@ -64,7 +64,7 @@ public class Reservas extends HttpServlet {
 			e.printStackTrace();
 		}
 		
-		request.getRequestDispatcher("Index.jsp").forward(request,response);
+		request.getRequestDispatcher("ReservasAdministracionSer").forward(request,response);
 	}
 
 }

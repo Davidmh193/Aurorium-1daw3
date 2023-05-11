@@ -35,7 +35,7 @@
 				<div class="links" id="links">
 					<div class="wrapper-links">
 						<a href="Index.jsp" class="link"><i class="fa fa-home"></i></q>
-							Home</a> <a href="Activides.jsp" class="link "><i
+							Home</a> <a href="Actividades.jsp" class="link "><i
 							class="fa fa-globe"></i></q> Actividades</a> <a href="Habitaciones.jsp"
 							class="link active"><i class="fa fa-bed"></i></q> Habitaciones</a> <a
 							href="Reservas.jsp" class="link"><i class="fa fa-book"></i></q>

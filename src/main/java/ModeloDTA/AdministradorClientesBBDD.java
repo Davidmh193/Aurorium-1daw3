@@ -54,7 +54,7 @@ public class AdministradorClientesBBDD {
 	
 	
 	//Inserta usuarios
-	public void InsertarUsuarios(String Dni, String Nombre,String apellido, String telefono,String Direccion, String Localidad) throws ClassNotFoundException{
+	public void InsertarClientes(String Dni, String Nombre,String apellido, String telefono,String Direccion, String Localidad) throws ClassNotFoundException{
 		try {
 			Conector conector = new Conector();
 			conector.conectar();

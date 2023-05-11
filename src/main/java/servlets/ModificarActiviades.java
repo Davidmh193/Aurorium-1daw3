@@ -52,10 +52,6 @@ AdministradorActividadesBBDD AdminActividades = new AdministradorActividadesBBDD
 			e.printStackTrace();
 		}
 		
-		
-	
-		
-		
 		request.getRequestDispatcher("/Administracion").forward(request,response);
 		
 	}
