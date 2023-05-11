@@ -251,8 +251,7 @@
 						<a href="https://github.com/Davidmh193/Aurorium-1daw3"></a><span>@Davidmh193</span>
 					</div>
 				</div>
-			</div>
-
+			</div>S
 			<div class="row">
 				<ul>
 					<li>Contacta con nosotros: auroriumresort@gmail.com</li>
@@ -269,6 +268,7 @@
 				By: Davidmh_7</div>
 		</div>
 	</footer>
+	
 	<script src="js/js.js"></script>
 </body>
 
