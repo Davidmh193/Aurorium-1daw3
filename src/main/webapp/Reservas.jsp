@@ -84,8 +84,7 @@
 							<option value="Suite Premium">Suite Premium</option>
 						</select>
 					</div>
-
-
+					
 					<button class="my-date-picker" type="submit"
 						style="margin-bottom: 0.3%;">RESERVAR</button>
 				</form>
