@@ -103,7 +103,8 @@
       <p>Nuestras pistas de tenis estan diseñadas para satisfacer a los jugadores mas exigentes. Con una superficie de
         alta calidad, las pistas ofrecen una excelente traccion y un bote de pelota uniforme para un juego fluido. <br>
         Ademas, nuestras pistas estan iluminadas para que puedas seguir jugando incluso despues de la puesta de sol.</p>
-      <button style="background-color: #25263a;">Inscribirse</button>
+       <a href="Actividades.jsp">
+      <button style="background-color: #25263a;">Inscribirse</button></a>
 
       <div class="precio">Precio: 25€ / Por persona </div>
       </div>
@@ -116,7 +117,8 @@
       <p>Nuestro campo de golf está diseñado para ofrecer un desafío emocionante a golfistas de todos los niveles. Con
         hermosos paisajes y obstáculos estratégicamente colocados, cada hoyo ofrece una experiencia única. <br> Además,
         nuestro campo cuenta con un equipo de profesionales disponibles para dar clases y mejorar tu juego.</p>
-      <button style="background-color: #25263a; ">Inscribirse</button>
+      <a href="Actividades.jsp">
+      <button style="background-color: #25263a; ">Inscribirse</button></a>
       <div class="precio">Precio: 40€ / Por persona </div>
 
     </div>
@@ -126,7 +128,8 @@
       <h4>Deportes</h4>
       <h2>Pista de padel</h2>
       <p>.En nuestras pistas de padel, podrás disfrutar de un emocionante juego en equipo o individual. Con una superficie de alta calidad, las pistas ofrecen un bote de pelota uniforme para un juego fluido. Además, al igual que las pistas de tenis, se dispone de iluminación en los momentos más nocturnos.</p>
-      <button style="background-color: #25263a;">Inscribirse</button>
+       <a href="Actividades.jsp">
+      <button style="background-color: #25263a;">Inscribirse</button></a>
       <div class="precio">Precio: 30€ / Por persona </div>
 
     </div>
@@ -137,7 +140,8 @@
       <h2>Gimnasio</h2>
       <p>Nuestro gimnasio cuenta con una amplia variedad de equipos de alta calidad para satisfacer todas tus
         necesidades de entrenamiento. <br> Desde máquinas de cardio hasta pesas libres y equipo de entrenamiento funcional, br nuestro gimnasio tiene todo lo que necesitas para mantenerte fitness</p>
-      <button style="background-color: #25263a;">Inscribirse</button>
+       <a href="Actividades.jsp">
+      <button style="background-color: #25263a;">Inscribirse</button></a>
       <div class="precio">Precio: 32€ / mes </div>
 
     </div>
@@ -148,7 +152,8 @@
       <h2>Salón de juegos</h2>
       <p>Nuestro salón de juegos y arcade es perfecto para aquellos que quieran disfrutar de una tarde divertida.
         Ofrecemos una variedad de juegos clásicos y modernos para todas las edades, además de todas las consolas de última generación.</p>
-      <button style="background-color: #25263a;">Inscribirse</button>
+       <a href="Actividades.jsp">
+      <button style="background-color: #25263a;">Inscribirse</button></a>
       <div class="precio">Precio: 59€ / Por persona </div>
 
     </div>
@@ -159,7 +164,8 @@
       <h2>Piscina exterior</h2>
       <p>Nuestra piscina exterior es el lugar perfecto para disfrutar de un día de sol y diversión. Con una amplia zona
         de baño y duchas exteriores, tumbonas y sombrillas, podrás relajarte y disfrutar de un ambiente relajante al aire libre con tus seres queridos.</p>
-      <button style="background-color: #25263a;">Inscribirse</button>
+       <a href="Actividades.jsp">
+      <button style="background-color: #25263a;">Inscribirse</button></a>
       <div class="precio">Precio: 35€ / Por persona </div>
 
     </div>
@@ -170,7 +176,8 @@
       <h2>Piscina interior</h2>
       <p>Nuestra piscina de interior es perfecta para nadar y hacer ejercicio en cualquier clima. Con agua cálida y una
         iluminación suave, podrás relajarte y disfrutar de un ambiente tranquilo y relajante.</p>
-      <button style="background-color: #25263a;">Inscribirse</button>
+       <a href="Actividades.jsp">
+      <button style="background-color: #25263a;">Inscribirse</button></a>
       <div class="precio">Precio: 45€ / Por persona </div>
 
     </div>
@@ -182,7 +189,8 @@
       <p>Nuestro tratamiento completo de belleza te ayudará a lucir y sentirte lo mejor posible. Desde cuidado de la
         piel hasta servicios de peluquería y manicura, nuestro equipo de profesionales te ayudará a encontrar el look
         perfecto para ti.</p>
-      <button style="background-color: #25263a;">Inscribirse</button>
+       <a href="Actividades.jsp">
+      <button style="background-color: #25263a;">Inscribirse</button></a>
       <div class="precio">Precio: 75€ / Por persona </div>
 
     </div>
@@ -194,7 +202,8 @@
       <p>Nuestro spa ofrece una experiencia de relajación incomparable. Con una amplia gama de tratamientos de spa,
         desde masajes hasta tratamientos de belleza y bienestar, nuestro equipo de profesionales te ayudará a
         rejuvenecer y revitalizar tu cuerpo y mente.</p>
-      <button style="background-color: #25263a;">Inscribirse</button>
+       <a href="Actividades.jsp">
+      <button style="background-color: #25263a;">Inscribirse</button></a>
       <div class="precio">Precio: 85€ / Por persona </div>
 
     </div>

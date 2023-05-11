@@ -2,45 +2,34 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Links CSS-->
-    <link rel="stylesheet" href="css/Index.css" />
-    <link rel="stylesheet" href="css/PedirDatos.css">
-    <link rel="stylesheet" href="css/Foter.css">
-  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Botones.css">
+    <link rel="stylesheet" href="css/Index.css">
+     <link rel="stylesheet" href="css/Foter.css">
+    <title>Document</title>
+</head>
     
-    
-    <!--Links letras-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-      <!--Boostrap-->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <title>Aurorium Resort</title>
-  </head>
-  <body class="hideScroll">
+
+
+<body class="hideScroll">
     <div>
       <header>
         <nav class="wrapper">
          <div class="imagenlogo"><img src="img/LogoAurorium1-removebg-preview.png" alt=""></div>
           <div class="links" id="links">
-        	<div class="wrapper-links">
-						<a href="Index.jsp" class="link "><i class="fa fa-home"></i></q>
-							Home</a> <a href="Actividades.jsp" class="link "> <i
-							class="fa fa-globe"></i></q> Actividades
-						</a> <a href="Habitaciones.jsp" class="link"><i class="fa fa-bed"></i></q>
-							Habitaciones</a> <a href="Reservas.jsp" class="link"> <i
-							class="fa fa-book"></i></q> Reservar
-						</a> <a href="Contacto.jsp" class="link"><i class="fa fa-phone"></i></q>
-							Contacto</a>
-					</div>
+            <div class="wrapper-links">
+                <a href="Index.jsp" class="link"><i class="fa fa-home"></i></q>
+							Home</a> <a href="Actividades.jsp" class="link "><i
+							class="fa fa-globe"></i></q> Actividades</a> <a href="Habitaciones.jsp"
+							class="link"><i class="fa fa-bed"></i></q> Habitaciones</a> <a
+							href="Reservas.jsp" class="link"> <i class="fa fa-book"></i></q>
+							Reservar
+						</a> <a href="Contacto.jsp" class="link active"><i
+							class="fa fa-phone"></i></q> Contacto</a>
+              </div>
           </div>
           <div class="icon-links" id="button-menu">
             <div></div>
@@ -67,12 +56,12 @@
           <div class = "contact-form">
             <form>
               <div style="display: inline-block;" inputs>
-                <input  type = "text" class = "form-control" placeholder="Dni">
-                <input  type = "text" class = "form-control" placeholder="Nombre">
-                <input  type = "email" class = "form-control" placeholder="Apellidos">
-                <input  type = "text" class = "form-control" placeholder="Telefono">
-                <input  type = "email" class = "form-control" placeholder="Direccion">
-                <input  type = "text" class = "form-control" placeholder="Localidad">
+                <input  type = "text" class = "form-control" placeholder="Dni"name="dnicliente">
+                <input  type = "text" class = "form-control" placeholder="Nombre"name="Nombre">
+                <input  type = "email" class = "form-control" placeholder="Apellidos"name="Apellido">
+                <input  type = "text" class = "form-control" placeholder="Telefono"name="telefono">
+                <input  type = "email" class = "form-control" placeholder="Direccion"name="email">
+                <input  type = "text" class = "form-control" placeholder="Localidad"name="text">
               </div>
               <!--Botn de enviar-->
               <button style=" margin-top:2%" class="learn-more">
@@ -81,15 +70,24 @@
                 </span>
                 <span class="button-text">Enviar</span>
               </button>
-            </form>    
+            </form>
+            
           </div>
+          
+          <a href="">
+          <button class="cta">
+            <span class="hover-underline-animation">Si ya estas registrado clica aqui</span>
+            <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+            </svg>
+        </button>
+        </a>
+ 
         </div>
   </div>
-  
-
-
-
-
+  </footer>
+  <script src="js/main.js"></script>
+  </body>
 
 
 		<!--Fotter-->
