@@ -470,7 +470,7 @@ body{
             
            }
         .container {
-            background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%);
+            background: linear-gradient(rgba(241, 241, 241, 0.5) 0%, rgba(0,0,0,.50) 100%);
             display: inline-block;
             flex-wrap: wrap;
             justify-content: space-between;

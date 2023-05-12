@@ -19,7 +19,7 @@
       </div> 
       <div class="content">
          <span class="title">Reserva Completada</span> 
-         <p class="message">Gracias por la compra. Si desea modificarla o cancelarla llama al 644353193 o acude a la sede más cercana.</p> 
+         <p class="message">Gracias por la compra. Si desea modificarla o cancelarla llama al 9426515168 o acude a la sede más cercana.</p> 
          </div> 
          <div class="actions">
             <a href="Reservas.jsp">

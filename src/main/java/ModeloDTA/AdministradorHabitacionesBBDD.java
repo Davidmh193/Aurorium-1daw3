@@ -9,7 +9,11 @@ import ModeloDTO.Habitaciones;
 
 public class AdministradorHabitacionesBBDD {
 
-	// muestra las habitaciones
+	/**
+	 *  muestra las habitaciones
+	 * @return devuelve las habitaciones
+	 * @throws SQLException
+	 */
 	public ArrayList<Habitaciones> gethabitaciones() throws SQLException {
 		ArrayList<Habitaciones> habitaciones = new ArrayList<>();
 		Conector conector = new Conector();
