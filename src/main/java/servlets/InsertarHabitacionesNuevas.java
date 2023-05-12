@@ -8,19 +8,19 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import ModeloDTA.AdministradorActividadesBBDD;
+import ModeloDTA.AdministradorHabitacionesBBDD;
 
 /**
- * Servlet implementation class InsertarActividadesEchas
+ * Servlet implementation class InsertarHabitacionesNuevas
  */
-@WebServlet("/InsertarActividadesEchas")
-public class InsertarActividadesEchas extends HttpServlet {
+@WebServlet("/InsertarHabitacionesNuevas")
+public class InsertarHabitacionesNuevas extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public InsertarActividadesEchas() {
+    public InsertarHabitacionesNuevas() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -29,15 +29,15 @@ public class InsertarActividadesEchas extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String nombre= request.getParameter("nombre");
-		String Codigo = request.getParameter("Codigo");
-		String participantes = request.getParameter("participantes");
+		String Id= request.getParameter("Id");
 		String precio = request.getParameter("precio");
+		String descripcion = request.getParameter("descripcion");
+		String tipo = request.getParameter("tipo");
 	
-		AdministradorActividadesBBDD insertarActividades = new AdministradorActividadesBBDD();
+		AdministradorHabitacionesBBDD InsertarHabitaciones = new AdministradorHabitacionesBBDD();
         
         try {
-        	insertarActividades.InsertarActividades(nombre, Codigo,participantes,precio);
+        	InsertarHabitaciones.InsertarHabitaciones(Id, precio,descripcion,tipo);
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

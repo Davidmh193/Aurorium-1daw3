@@ -69,5 +69,27 @@ public class AdministradorHabitacionesBBDD {
 		}
 
 	}
+	//Inserta Hbaitaciones en la BBDD
+	public void InsertarHabitaciones(String Id, String precio, String descripcion,
+			String tipo) throws ClassNotFoundException {
+		try {
+			Conector conector = new Conector();
+			conector.conectar();
+
+			PreparedStatement pSt = conector.getCon().prepareStatement(
+					"INSERT INTO habitaciones (Id_Habitacion, Precio, Descripcion,Tipo_Habitacion ) Values (?,?,?,?)");
+			pSt.setString(1, Id);
+			pSt.setString(2, precio);
+			pSt.setString(3, descripcion);
+			pSt.setString(4, tipo);
+			pSt.execute();
+
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+		}
+	}
+	
+	
 
 }
