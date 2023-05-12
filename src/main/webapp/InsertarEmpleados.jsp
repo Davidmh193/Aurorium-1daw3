@@ -21,14 +21,14 @@
          <div class="imagenlogo"><img src="img/LogoAurorium1-removebg-preview.png" alt=""></div>
           <div class="links" id="links">
             <div class="wrapper-links">
-                <a href="Index.jsp" class="link"><i class="fa fa-home"></i></q>
-							Home</a> <a href="Actividades.jsp" class="link "><i
-							class="fa fa-globe"></i></q> Actividades</a> <a href="Habitaciones.jsp"
-							class="link"><i class="fa fa-bed"></i></q> Habitaciones</a> <a
-							href="Reservas.jsp" class="link"> <i class="fa fa-book"></i></q>
-							Reservar
-						</a> <a href="Contacto.jsp" class="link "><i
-							class="fa fa-phone"></i></q> Contacto</a>
+                			<a href="Administracion" class="link "><i
+							class="fa fa-archive"></i></q> Administracion</a> <a
+							href="ContactoEmpleados" class="link "><i
+							class="fa fa-address-book-o"></i></q> Contacto</a> <a
+							href="ReservasAdministracionSer" class="link"><i
+							class="fa fa-calendar-check-o"></i></q> Reservas</a> <a href="Empleados"
+							class="link"><i class="fa fa-users"></i></q> Empleados</a> <a href="Logout"
+							class="link"><i class="fa fa-user-circle"></i></q> Log-out</a>
               </div>
           </div>
           <div class="icon-links" id="button-menu">
@@ -42,26 +42,28 @@
     </div> 
     <section class = "contact-section">
         <div class = "contact-bg">
-          <h2>Introduzca sus datos</h1>
+          <h2>Introduzca Datos de los nuevos trabajadores</h1>
           <div class = "line">
             <div></div>
             <div></div>
             <div></div>
           </div>
-          <div class="textoh2"><p class = "text">Antes de nada, rellene este formulario para terminar de realizar el proceso, si usted ya ha introducido sus datos recientemente, no hará falta que los introduzca </p>
+          <div class="textoh2"><p class = "text">Inserta Nuevos Empleados en la base de datos de Aurorium Resort </p>
         </div></div>
   
   
         <div class = "contact-body">
           <div class = "contact-form">
-            <form method="POST" action="InsertarClientes">
+            <form method="GET" action="InsertarEmpeladoNuevo">
               <div style="display: inline-block;" inputs>
-                <input  type = "text" class = "form-control" placeholder="Dni"name="dnicliente">
+                <input  type = "text" class = "form-control" placeholder="Dni"name="dni">
                 <input  type = "text" class = "form-control" placeholder="Nombre"name="Nombre">
                 <input  type = "text" class = "form-control" placeholder="Apellidos"name="Apellido">
                 <input  type = "text" class = "form-control" placeholder="Telefono"name="telefono">
                 <input  type = "text" class = "form-control" placeholder="Direccion"name="direccion">
                 <input  type = "text" class = "form-control" placeholder="Localidad"name="localidad">
+                <input  type = "text" class = "form-control" placeholder="Rol"name="rol">
+                <input  type = "text" class = "form-control" placeholder="Contraseña"name="password">
               </div>
               <!--Botn de enviar-->
               <button style=" margin-top:2%" class="learn-more"  type="submit">
@@ -73,15 +75,6 @@
             </form>
             
           </div>
-          
-          <a href="GraciasCompra.jsp">
-          <button class="cta">
-            <span class="hover-underline-animation">Si ya estas registrado clica aqui</span>
-            <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
-                <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
-            </svg>
-        </button>
-        </a>
  
         </div>
   </div>

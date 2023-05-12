@@ -12,7 +12,7 @@ public class InscripcionesBBDD {
 			conector.conectar();
 
 			PreparedStatement pSt = conector.getCon().prepareStatement(
-					"INSERT INTO inscripciones (Codigo_Actividad, Dni_Cliente,Fecha_Entrada ) Values (?,?,?)");
+					"INSERT INTO inscripciones (Codigo_Actividad, Dni_Cliente,Fecha_actividad ) Values (?,?,?)");
 			pSt.setString(1, Codigo_actividad);
 			pSt.setString(2, dni);
 			pSt.setDate(3, new java.sql.Date(fechaEntrada.getTime()));

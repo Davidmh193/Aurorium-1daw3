@@ -215,8 +215,8 @@
 
 									</c:forEach>
 
-									<td colspan="11" class="text-center"><a
-										href="/MiaKhademia/Insertar?q=profesor"><i
+									<td colspan="10" class="text-center"><a
+										href="InsertarEmpleados.jsp"><i
 											class="fa-solid fa-plus fa-lg"></i></a></td>
 
 									

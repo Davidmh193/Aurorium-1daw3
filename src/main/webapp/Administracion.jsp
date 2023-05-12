@@ -211,7 +211,7 @@
 													class="fa-solid fa-trash-can fa-lg"></i></a></td>
 
 
-											<td><a href="InsertarClientes${cliente.dni}"><i
+											<td><a href="InsertarClienteAdmin.jsp"><i
 													class="fa fa-user-plus"></i></a></td>
 
 										</tr>

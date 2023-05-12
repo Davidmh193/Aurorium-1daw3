@@ -51,7 +51,7 @@
         <p class="descripcion"> Explora los diferentes servicios complementarios que ofrecemos para una estancia mas
           agradable.
         </p>
-          <form method="POST" action="InsertarActividades">
+          <form method="POST" action="Insertaractividades">
         <div class="botoncitos">
         
 
@@ -60,15 +60,15 @@
         <input type="text" name="Dni"class="my-text-input" placeholder="DNI" style="margin-bottom: 2%;">
         <div class="dropdown" style="display:inline-block; margin-bottom: 2%;">
           <select name="Desplegable">
-            <option value="Pista de Tenis">Pista de Tenis</option>
-            <option value="Pista de Padel">Pista de Padel</option>
-            <option value="Pista de golf">Pista de golf</option>
-            <option value="Spa">Spa</option>
-            <option value="Salon de juegos">Salon de juegos</option>
-            <option value="Piscina interior">Piscina interior</option>
-            <option value="Piscina exterior">Piscina exterior</option>
-            <option value="Tratamiento de belleza">Tratamiento de belleza</option>
-            <option value="Gimnasio">Gimnasio</option>
+            <option value="1">Pista de Tenis</option>
+            <option value="2">Pista de Padel</option>
+            <option value="2">Pista de golf</option>
+            <option value="3">Spa</option>
+            <option value="4">Salon de juegos</option>
+            <option value="5">Piscina interior</option>
+            <option value="6">Piscina exterior</option>
+            <option value="7">Tratamiento de belleza</option>
+            <option value="8">Gimnasio</option>
 
           </select>
         </div>

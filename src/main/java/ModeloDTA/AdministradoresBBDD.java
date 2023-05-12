@@ -59,7 +59,7 @@ public class AdministradoresBBDD {
 			conector.conectar();
 
 			PreparedStatement pSt = conector.getCon().prepareStatement(
-					"INSERT INTO empleados (Dni, Nombre, Apellido ,Telefono,Direccion ,Localidad,Rol,Password) Values (?,?,?,?,?,?,?,?)");
+					"INSERT INTO empleados (Dni, Nombre, Apellidos,Telefono,Direccion ,Localidad,Rol,Password) Values (?,?,?,?,?,?,?,?)");
 			pSt.setString(1, Dni);
 			pSt.setString(2, Nombre);
 			pSt.setString(3, apellido);
