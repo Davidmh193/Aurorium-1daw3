@@ -313,7 +313,7 @@
 
 
 											<td><a
-												href="InsertarClientes${actividadescr.codigo_actividad}"><i
+												href="InsertarActividades.jsp"><i
 													class="fa fa-user-plus"></i></a></td>
 
 										</tr>

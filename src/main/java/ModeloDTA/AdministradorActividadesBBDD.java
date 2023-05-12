@@ -59,7 +59,7 @@ public class AdministradorActividadesBBDD {
 			conector.conectar();
 
 			PreparedStatement pSt = conector.getCon().prepareStatement(
-					"INSERT INTO actividades (Nombre_Actividad, Codigo_Actividad, Max_Participantes,Precio_Actividad ) Values (?,?,?,?,?)");
+					"INSERT INTO actividades (Nombre_Actividad, Codigo_Actividad, Max_Participantes,Precio_Actividad ) Values (?,?,?,?)");
 			pSt.setString(1, Nombre_actividad);
 			pSt.setString(2, Codigo_actividad);
 			pSt.setString(3, max_participantes);
