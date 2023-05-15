@@ -22,8 +22,9 @@ public class ReservasBBDD {
 					"INSERT INTO reservas (Id_Habitacion, Dni_Cliente, Fecha_Entrada,Fecha_Salida) Values (?,?,?,?)");
 			pSt.setString(2, DniReserva);
 			pSt.setString(1, Habitaciones);
-			pSt.setDate(3, new java.sql.Date(FechaSalida.getTime()));
-			pSt.setDate(4, new java.sql.Date(FechaEntrada.getTime()));
+			
+			pSt.setDate(3, new java.sql.Date(FechaEntrada.getTime()));
+			pSt.setDate(4, new java.sql.Date(FechaSalida.getTime()));
 			pSt.execute();
 		} catch (SQLException e) {
 
