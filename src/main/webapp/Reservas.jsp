@@ -70,11 +70,11 @@
 				
 				<form method="post" action="Reservas">
 					<input type="date" class="my-date-picker"
-						style="margin-bottom: 2%;" name="FechaEntrada"> <input
+						style="margin-bottom: 2%;" name="FechaEntrada" required> <input
 						type="date" class="my-date-picker" style="margin-bottom: 2%;"
-						name="FechaSalida"> <input type="text"
+						name="FechaSalida" required> <input type="text"
 						class="my-text-input" placeholder="DNI" name="Dni"
-						style="margin-bottom: 2%;">
+						style="margin-bottom: 2%;" required>
 					<div class="dropdown"
 						style="display: inline-block; margin-bottom: 2%;">
 						<select name="Desplegable">

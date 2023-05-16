@@ -56,10 +56,10 @@
           <div class = "contact-form">
             <form method="GET" action="InsertarActividadesEchas">
               <div style="display: inline-block;" inputs>
-                <input  type = "text" class = "form-control" placeholder="Nombre"name="nombre">
-                <input  type = "text" class = "form-control" placeholder="Codigo"name="Codigo">
-                <input  type = "text" class = "form-control" placeholder="Participantes"name="participantes">
-                <input  type = "text" class = "form-control" placeholder="Precio"name="precio">
+                <input  type = "text" class = "form-control" placeholder="Nombre"name="nombre" required>
+                <input  type = "number" class = "form-control" placeholder="Codigo"name="Codigo" required>
+                <input  type = "number" class = "form-control" placeholder="Participantes"name="participantes" required>
+                <input  type = "number" class = "form-control" placeholder="Precio"name="precio" required>
               </div>
               <!--Botn de enviar-->
               <button style=" margin-top:2%" class="learn-more"  type="submit">

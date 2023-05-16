@@ -55,9 +55,9 @@
         <div class="botoncitos">
         
 
-        <input type="date" name="FechaEntrada" class="my-date-picker" style="margin-bottom: 2%;">
+        <input type="date" name="FechaEntrada" class="my-date-picker" style="margin-bottom: 2%;" required>
         
-        <input type="text" name="Dni"class="my-text-input" placeholder="DNI" style="margin-bottom: 2%;">
+        <input type="text" name="Dni"class="my-text-input" placeholder="DNI" style="margin-bottom: 2%;" required>
         <div class="dropdown" style="display:inline-block; margin-bottom: 2%;">
           <select name="Desplegable">
             <option value="1">Pista de Tenis</option>

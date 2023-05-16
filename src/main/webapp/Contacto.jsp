@@ -97,16 +97,16 @@
 				<form method="post" action="Contacto">
 					<div>
 						<input type="text" class="form-control" placeholder="Dni"
-							name="Dni"> <input type="text" class="form-control"
-							placeholder="Nombre-apellido" name="Nombreapellido">
+							name="Dni" required> <input type="text" class="form-control"
+							placeholder="Nombre-apellido" name="Nombreapellido" required>
 					</div>
 					<div>
 						<input type="email" class="form-control" placeholder="E-mail"
-							name="Email"> <input type="text" class="form-control"
-							placeholder="Telefono" name="Telefono">
+							name="Email" required> <input type="text" class="form-control"
+							placeholder="Telefono" name="Telefono" required>
 					</div>
 					<textarea rows="5" placeholder="Mensaje" class="form-control"
-						name="mensaje"></textarea>
+						name="mensaje" required></textarea>
 					<!--Botn de enviar-->
 					<button class="learn-more">
 						<span class="circle" aria-hidden="true"> <span

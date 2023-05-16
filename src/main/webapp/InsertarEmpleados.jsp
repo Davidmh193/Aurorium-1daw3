@@ -56,14 +56,14 @@
           <div class = "contact-form">
             <form method="GET" action="InsertarEmpeladoNuevo">
               <div style="display: inline-block;" inputs>
-                <input  type = "text" class = "form-control" placeholder="Dni"name="dni">
-                <input  type = "text" class = "form-control" placeholder="Nombre"name="Nombre">
-                <input  type = "text" class = "form-control" placeholder="Apellidos"name="Apellido">
-                <input  type = "text" class = "form-control" placeholder="Telefono"name="telefono">
-                <input  type = "text" class = "form-control" placeholder="Direccion"name="direccion">
-                <input  type = "text" class = "form-control" placeholder="Localidad"name="localidad">
-                <input  type = "text" class = "form-control" placeholder="Rol"name="rol">
-                <input  type = "text" class = "form-control" placeholder="Contraseña"name="password">
+                <input  type = "text" class = "form-control" placeholder="Dni"name="dni" required>
+                <input  type = "text" class = "form-control" placeholder="Nombre"name="Nombre" required> 
+                <input  type = "text" class = "form-control" placeholder="Apellidos"name="Apellido" required>
+                <input  type = "number" class = "form-control" placeholder="Telefono"name="telefono" required>
+                <input  type = "text" class = "form-control" placeholder="Direccion"name="direccion" required>
+                <input  type = "text" class = "form-control" placeholder="Localidad"name="localidad" required>
+                <input  type = "text" class = "form-control" placeholder="Rol"name="rol" required>
+                <input  type = "text" class = "form-control" placeholder="Contraseña"name="password" required>
               </div>
               <!--Botn de enviar-->
               <button style=" margin-top:2%" class="learn-more"  type="submit">
